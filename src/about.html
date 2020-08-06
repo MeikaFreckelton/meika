@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/86a9ff069d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/isw3mwx.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+        }
+    </script>
+    <title>me</title>
+</head>
+<body> 
+    
+    <!-- responsive menu and header -->
+    <div class="mobile-container">
+        <nav class="navbar" id="mytopnav">
+            <div class="logo-wrap">
+                <a href="#" class="logo mobile-logo m-no-hover"><img src="SVG/mbile-pink.svg" alt="logo"></a>
+                <a href="#" class="logo mobile-logo m-hover"><img src="SVG/mbile-black.svg" alt="logo"></a>
+            </div>
+                <div class="menu-wrap">
+                <ul class="main-nav" id="myLinks">
+                    <li>
+                        <a href="index.html" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-links">About</a>
+                    </li>
+                    <li>
+                        <a href="about.html#to-skills" class="nav-links">Skills</a>
+                        
+                    </li>
+                    <li class="desktop-logo">
+                        <a href="#" class="logo no-hover"><img src="SVG/desktop-pink.svg" alt="logo"></a>
+                        <a href="#" class="logo hover"><img src="SVG/desktop-black.svg" alt="logo"></a>
+                    </li>
+                    <li>
+                        <a href="about.html#to-projects" class="nav-links">Projects</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="nav-links">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-links">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
+
+
+    <!-- about section --------------- -->
+    <main class="about-me" id="profile">
+        <h3>ABOUT ME</h3>
+        <div class="row container">
+            <div class="tab-columns">
+                <div class="column-1">
+                    <div>
+                        <img src="img/placeholder.jpg" class="pfp" alt="Profile">
+                    </div>
+
+                    <div class="resume">
+                        <a href="#" class="resume-link">my resume</a>
+                    </div>
+                </div>
+
+                <div class="facts column-2">
+                    <h4><span class="feature-icon"></span> 10 facts about me</h4>
+                    <div class="list-bg">
+                        <ol>
+                            <li>I like making lists</li>
+                            <li>I love learning new things</li>
+                            <li>I love programming</li>
+                            <li>I love to push myself</li>
+                            <li>I love my pets</li>
+                            <li>I am dedicated to my work</li>
+                            <li>I like to sew</li>
+                            <li>I am nineteen</li>
+                            <li>I enjoy spending time alone</li>
+                            <li>I love designing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <h4 class="past-edu"><span class="feature-icon">></span>  past education</h4>
+                <div class="container-a">
+                <img src="SVG/timeline.svg" alt="timeline" class="timeline">
+                </div>
+            </div>
+            
+
+              
+        </div> 
+
+
+        <section class="skills">
+            <h3><a name="to-skills">SKILLS</a></h3>
+            <h4 id="design"><span class="feature-icon"></span> development </h4>
+            <div class="skills-row">
+                <div class="skill-item">
+                    <img src="img/skills/css.svg" alt="css" class="skill-img img-f">
+                    <p>CSS</p>
+                    <p class="rating">★★★☆☆</p>
+                </div>
+                <div class="skill-item">
+                    <img src="img/skills/ruby.svg" alt="ruby" class="skill-img ruby img-f">
+                    <p>Ruby</p>
+                    <p class="rating">★★☆☆☆</p>
+                </div>
+                <div class="skill-item">
+                    <img src="img/skills/html.svg" alt="html" class="skill-img img-f">
+                    <p>html</p>
+                    <p class="rating">★★★☆☆</p>
+                </div>
+            </div>
+
+            <h4 id="design"><span class="feature-icon">></span> design </h4>
+            <div class="skills-row " id="row-last">
+                <div class="skill-item">
+                    <img src="img/skills/illustrator.svg" alt="illustrator" class="skill-img">
+                    <p>Adobe Illustrator</p>
+                    <p class="rating">★★★★☆</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="img/skills/indesign.svg" alt="indesign" class="skill-img">
+                    <p>Adobe Indesign</p>
+                    <p class="rating">★★★☆☆</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="img/skills/photoshop.svg" alt="photoshop" class="skill-img">
+                    <p>Adobe Photoshop</p>
+                    <p class="rating"><a name="to-projects">★★★☆☆</a></p>
+                </div>  
+            </div>
+        </section>
+
+
+        <section class="projects-a">
+            <h3>PROJECTS</h3>
+            <div class="row container projects-imgs ">
+                <div class="projects-rows">
+                    <div class="container1 f-img col-9">
+                        <img src="img/project-img/1x/terminal.jpg" alt="ruby-app">
+                        <div class="centered"><p>ruby terminal game</p></div>
+                    </div>
+                    <div class="container1 col-9">
+                        <img src="img/project-img/1x/ui.jpg" alt="UI/UX">
+                        <div class="centered"><p>UI/UX design</p></div>
+                    </div>
+                </div>
+                <div class="container1 last-img">
+                    <img src="img/project-img/1x/code.jpg" alt="web-design">
+                    <div class="centered"><p>website design & development</p></div>
+                </div>
+                
+                
+    
+            </div>
+
+
+        </section>
+
+        <div class="copyr">
+            <p class="copyright-f copy-copyright">&copy Copyright Meika Freckelton | 2020</p>
+        </div>
+    </main>
+
+    <footer class="footer-icons">
+        <ul>
+            <li><p class="copy-c">&copy</p></li>
+            <li><p class="copyright-d">copyright Meika Freckelton | 2020</p></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>  
+</body>
+</html>
+
+
+
+
+<!-- on this page:
+1. header with nav bar - close and open on mobile and tablet
+2. heading: "ABOUT ME"
+3. photo of me
+4. heading: "my story"
+5. content about past education and story
+6. heading: "interests"
+7. content about my interests
+8. footer -->

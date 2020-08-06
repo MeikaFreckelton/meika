@@ -1,0 +1,103 @@
+#page-wrapper-i{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .home-content{
+
+        .landing{
+            height: 100vh;
+
+            .landing-contents{
+                padding-top: 50%;
+
+                h4{
+                    color: black;
+                }
+
+                .desktop-logos{
+                    width: 98%;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                    
+                    #BlackLogo{
+                        display: none;
+                        width: 90%;
+                    }
+                    #PinkLogo{
+                        width: 90%; 
+                    }
+        
+                    &:hover{
+                        #BlackLogo{
+                            display: flex;
+                            
+                        }
+                        #PinkLogo{
+                            display: none;
+                        }
+                    }
+        
+                }
+            }
+        }
+
+        .welcome{
+            background-color: $feature;
+            padding: 1em 0.5em;
+            box-shadow: 0.5em 0.5em 0  0 black;
+            color: white;
+            margin-bottom: 15%;
+            margin-top: 10%;
+        }
+
+        .welcome-d{
+            display: none;
+            background-color: $feature;
+            padding: 3em;
+            box-shadow: 1em 1em 0  0 black;
+            color: white;
+            margin-bottom: 15%;
+            margin-top: 10%;
+        }  
+    }
+
+    .menu-options{
+        ul{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 95vw;
+            margin-bottom: 20%;
+            
+            .odd-item{
+                display: none;
+                &:hover{
+                    box-shadow: 0.35em 0.35em 0 0 black;
+                    background-color: $feature;
+                }
+            }
+        
+            li{
+                list-style-type: none;
+                width: 100;
+                background-color: black;
+                padding: 1em;
+                margin: 3% 0;
+                box-shadow: 0.5em 0.5em 0 0 $feature;
+                &:hover{
+                    background-color: $feature;
+                    box-shadow: 0.5em 0.5em 0 0 black;
+                } 
+                
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: 'raleway', sans-serif;
+                    font-size: 1.5em;      
+                }
+            }
+    }   }
+}

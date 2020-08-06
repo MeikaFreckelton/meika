@@ -1,0 +1,62 @@
+@import 'fonts';
+@import 'menu';
+@import 'about';
+@import 'contact';
+@import 'footer';
+@import 'projects';
+@import 'blog';
+@import 'skills';
+@import 'index';
+@import 'responsive';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.copyright{
+    bottom: 13%;
+    display:flex;
+    justify-content: center;
+    background-color: lightgreen;
+    width: 100%;
+
+    p{ 
+        padding: 1em;
+    }
+}
+
+.copyright-desktop{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    padding: 1.6%;
+    font-size:1.25em
+}
+
+
+.logo h1{
+    &:hover{
+        color: $feature;
+    }
+}
+
+.feature-icon{
+    color: black;
+    
+}
+
+.copyr{
+    text-align: center;
+    margin-top: 12%;
+}
