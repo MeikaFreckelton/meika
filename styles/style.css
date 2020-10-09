@@ -772,7 +772,7 @@ footer .copyrights {
 }
 
 #page-wrapper-i .home-content .welcome {
-  font-size: 0.75em;
+  font-size: 0.65em;
   margin: 10% auto 15%;
   background-color: white;
   padding: 1em 0.5em;
@@ -841,7 +841,7 @@ footer .copyrights {
   text-decoration: none;
   color: #ff61ba;
   font-family: 'raleway', sans-serif;
-  font-size: 1.15em;
+  font-size: 1em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1571,5 +1571,6 @@ body {
 .copyr {
   text-align: center;
   margin-top: 12%;
+  font-size: 0.75em;
 }
 /*# sourceMappingURL=style.css.map */
