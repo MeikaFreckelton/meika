@@ -474,6 +474,28 @@ footer .copyrights {
   left: 3%;
 }
 
+#profile .projects-a .container .container1 {
+  position: relative;
+  text-align: center;
+}
+
+#profile .projects-a .container .container1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+#profile .projects-a .container .container1 .centered {
+  z-index: 99;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .projects {
   position: absolute;
   top: 10%;
@@ -511,10 +533,6 @@ footer .copyrights {
 
 .projects img:hover .centered {
   color: black;
-}
-
-.projects .container .container1 .centered {
-  color: white;
 }
 
 .projects .last-img {
