@@ -716,6 +716,18 @@ footer .copyrights {
   text-align: center;
 }
 
+#page-wrapper-i .home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 #page-wrapper-i .home-content .landing {
   height: 100vh;
 }
@@ -726,6 +738,7 @@ footer .copyrights {
 
 #page-wrapper-i .home-content .landing .landing-contents h4 {
   color: black;
+  font-size: 1.15em;
 }
 
 #page-wrapper-i .home-content .landing .landing-contents .desktop-logos {
@@ -759,13 +772,17 @@ footer .copyrights {
 }
 
 #page-wrapper-i .home-content .welcome {
-  background-color: #ff61ba;
+  font-size: 0.75em;
+  margin: 10% auto 15%;
+  background-color: white;
   padding: 1em 0.5em;
-  -webkit-box-shadow: 0.5em 0.5em 0  0 black;
-          box-shadow: 0.5em 0.5em 0  0 black;
-  color: white;
+  -webkit-box-shadow: 0.5em 0.5em 0 0 #ff61ba;
+          box-shadow: 0.5em 0.5em 0 0 #ff61ba;
+  color: black;
+  border: 1px solid #ff61ba;
   margin-bottom: 15%;
   margin-top: 10%;
+  width: 80vw;
 }
 
 #page-wrapper-i .home-content .welcome-d {
@@ -790,7 +807,7 @@ footer .copyrights {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 95vw;
+  width: 80vw;
   margin-bottom: 20%;
 }
 
@@ -805,13 +822,13 @@ footer .copyrights {
 }
 
 #page-wrapper-i .menu-options ul li {
+  border: 1px solid black;
   list-style-type: none;
-  width: 100;
-  background-color: black;
-  padding: 1em;
-  margin: 3% 0;
-  -webkit-box-shadow: 0.5em 0.5em 0 0 #ff61ba;
-          box-shadow: 0.5em 0.5em 0 0 #ff61ba;
+  background-color: white;
+  padding: 0.65em;
+  margin: 5% 0;
+  -webkit-box-shadow: 0.5em 0.5em 0 0 black;
+          box-shadow: 0.5em 0.5em 0 0 black;
 }
 
 #page-wrapper-i .menu-options ul li:hover {
@@ -822,13 +839,9 @@ footer .copyrights {
 
 #page-wrapper-i .menu-options ul li a {
   text-decoration: none;
-  color: white;
+  color: #ff61ba;
   font-family: 'raleway', sans-serif;
-  font-size: 1.5em;
-}
-
-[class*="col-"] {
-  width: 100%;
+  font-size: 1.15em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1051,6 +1064,10 @@ footer .copyrights {
   .blog-page {
     top: 13%;
   }
+}
+
+[class*="col-"] {
+  width: 100%;
 }
 
 @media all and (min-width: 769px) {

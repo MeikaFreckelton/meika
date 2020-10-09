@@ -5,6 +5,10 @@
     text-align: center;
 
     .home-content{
+        // width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
 
         .landing{
             height: 100vh;
@@ -14,6 +18,7 @@
 
                 h4{
                     color: black;
+                    font-size: 1.15em;
                 }
 
                 .desktop-logos{
@@ -45,12 +50,16 @@
         }
 
         .welcome{
-            background-color: $feature;
+            font-size: 0.75em;
+            margin: 10% auto 15%;
+            background-color: white;
             padding: 1em 0.5em;
-            box-shadow: 0.5em 0.5em 0  0 black;
-            color: white;
+            box-shadow: 0.5em 0.5em 0  0 $feature;
+            color: black;
+            border: 1px solid $feature;
             margin-bottom: 15%;
             margin-top: 10%;
+            width: 80vw
         }
 
         .welcome-d{
@@ -65,11 +74,12 @@
     }
 
     .menu-options{
+        
         ul{ 
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 95vw;
+            width: 80vw;
             margin-bottom: 20%;
             
             .odd-item{
@@ -81,12 +91,13 @@
             }
         
             li{
+                border: 1px solid black;
                 list-style-type: none;
-                width: 100;
-                background-color: black;
-                padding: 1em;
-                margin: 3% 0;
-                box-shadow: 0.5em 0.5em 0 0 $feature;
+                // width: 100;
+                background-color: white;
+                padding: 0.65em;
+                margin: 5% 0;
+                box-shadow: 0.5em 0.5em 0 0 black;
                 &:hover{
                     background-color: $feature;
                     box-shadow: 0.5em 0.5em 0 0 black;
@@ -94,9 +105,10 @@
                 
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: $feature;
+                    
                     font-family: 'raleway', sans-serif;
-                    font-size: 1.5em;      
+                    font-size: 1.15em;      
                 }
             }
     }   }
