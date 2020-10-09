@@ -17,7 +17,19 @@
 
     .logo-wrap{
         background: rgba(255, 255, 255, 0.80);
-        height: 10%;
+        height: 8%;
+        width: 100%;
+
+        
+        img{
+            height: 4%;
+            position: relative;
+            left: 6%;
+            top: 0;
+            padding-bottom: 1%;
+            
+           
+        }
     }
     
     
@@ -59,11 +71,11 @@
     }
     .m-hover{
         img{
-            width: 75%;
+            // width: 75%;
             // height: 10%;
             position: absolute;
             top: 2.5%;
-            left: 5%;
+            // left: 5%;
             display: inline-block;
 
 
@@ -105,8 +117,8 @@
         position: absolute; 
         right: 0;
         top: 0;
-        padding: 6vw;
-        font-size: 6vw;
+        padding: 4vw 6vw;
+        font-size: 5vw;
         color: black;
         &:hover{
             color: $feature;

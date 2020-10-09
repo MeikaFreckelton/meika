@@ -25,7 +25,7 @@
         
 
         .skill-item{
-            margin: 7% 3% 5% 4%;
+            margin: 12% 3% 0 4%;
             text-align: center;
            
             
@@ -43,22 +43,22 @@
             img{
 
                 // width: 25vw;
-                height: 50%;
+                height: 38%;
+                width: auto;
 
                 
             }
 
-            .img-f{
-                height: 60%;
+            // .img-f{
+            //     height: 40%;
                 
-            }
+            // }
             
 
             p{
-                margin: 0;
+                margin: 10% 0;
                 padding: 0;
-                font-size: 1.2em;
-                font-weight: heavy;
+                font-size: 1em;
                 text-align: center;
                 color: $feature;
 

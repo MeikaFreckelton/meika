@@ -45,16 +45,17 @@
 
     ol{
         font-family: 'raleway', sans-serif;
-        margin: 3% 6% 8% 15%;
+        margin: 5% 6% 8% 15%;
         list-style: none;
         counter-reset: my-awesome-counter;
         line-height: 1.5;
-        font-size: 1.45em;
+        font-size: 1em;
 
         li{
             counter-increment: list;
             list-style-type: none;
             position: relative;
+            margin-bottom: 5%;
 
             &::before {
                 font-weight: bold;

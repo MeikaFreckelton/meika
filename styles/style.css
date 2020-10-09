@@ -71,7 +71,16 @@ p {
 
 .navbar .logo-wrap {
   background: rgba(255, 255, 255, 0.8);
-  height: 10%;
+  height: 8%;
+  width: 100%;
+}
+
+.navbar .logo-wrap img {
+  height: 4%;
+  position: relative;
+  left: 6%;
+  top: 0;
+  padding-bottom: 1%;
 }
 
 .navbar .desktop-logo {
@@ -98,10 +107,8 @@ p {
 }
 
 .navbar .m-hover img {
-  width: 75%;
   position: absolute;
   top: 2.5%;
-  left: 5%;
   display: inline-block;
 }
 
@@ -140,8 +147,8 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 6vw;
-  font-size: 6vw;
+  padding: 4vw 6vw;
+  font-size: 5vw;
   color: black;
 }
 
@@ -207,17 +214,18 @@ p {
 
 #profile ol {
   font-family: 'raleway', sans-serif;
-  margin: 3% 6% 8% 15%;
+  margin: 5% 6% 8% 15%;
   list-style: none;
   counter-reset: my-awesome-counter;
   line-height: 1.5;
-  font-size: 1.45em;
+  font-size: 1em;
 }
 
 #profile ol li {
   counter-increment: list;
   list-style-type: none;
   position: relative;
+  margin-bottom: 5%;
 }
 
 #profile ol li::before {
@@ -676,7 +684,7 @@ footer .copyrights {
 }
 
 .skills .skills-row .skill-item {
-  margin: 7% 3% 5% 4%;
+  margin: 12% 3% 0 4%;
   text-align: center;
 }
 
@@ -686,18 +694,14 @@ footer .copyrights {
 }
 
 .skills .skills-row .skill-item img {
-  height: 50%;
-}
-
-.skills .skills-row .skill-item .img-f {
-  height: 60%;
+  height: 38%;
+  width: auto;
 }
 
 .skills .skills-row .skill-item p {
-  margin: 0;
+  margin: 10% 0;
   padding: 0;
-  font-size: 1.2em;
-  font-weight: heavy;
+  font-size: 1em;
   text-align: center;
   color: #ff61ba;
 }
@@ -832,9 +836,13 @@ footer .copyrights {
 }
 
 #page-wrapper-i .menu-options ul li:hover {
-  background-color: #ff61ba;
-  -webkit-box-shadow: 0.5em 0.5em 0 0 black;
-          box-shadow: 0.5em 0.5em 0 0 black;
+  background-color: black;
+  -webkit-box-shadow: 0.5em 0.5em 0 0 #ff61ba;
+          box-shadow: 0.5em 0.5em 0 0 #ff61ba;
+}
+
+#page-wrapper-i .menu-options ul li:hover a {
+  color: white;
 }
 
 #page-wrapper-i .menu-options ul li a {

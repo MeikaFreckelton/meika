@@ -99,8 +99,12 @@
                 margin: 5% 0;
                 box-shadow: 0.5em 0.5em 0 0 black;
                 &:hover{
-                    background-color: $feature;
-                    box-shadow: 0.5em 0.5em 0 0 black;
+                    background-color: black;
+                    
+                    box-shadow: 0.5em 0.5em 0 0 $feature;
+                    a{
+                        color: white;
+                    }
                 } 
                 
                 a{
