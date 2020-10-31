@@ -687,6 +687,10 @@ footer .copyrights {
   margin: 5%;
 }
 
+.skills .skills-margin-b {
+  margin-bottom: 10%;
+}
+
 .skills .skills-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,13 +715,26 @@ footer .copyrights {
   font-size: 1em;
 }
 
+.skills .skills-row .skill-item #express {
+  width: 20vw;
+}
+
+.skills .skills-row .skill-item #node {
+  width: 23vw;
+}
+
+.skills .skills-row .skill-item #mongo {
+  width: 25vw;
+}
+
 .skills .skills-row .skill-item img {
+  width: 25vw;
   height: 38%;
   width: auto;
 }
 
 .skills .skills-row .skill-item p {
-  margin: 10% 0;
+  margin: 1em 0;
   padding: 0;
   font-size: 1em;
   text-align: center;
