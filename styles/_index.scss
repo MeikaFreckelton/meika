@@ -52,25 +52,13 @@
         .welcome{
             font-size: 0.65em;
             margin: 10% auto 15%;
-            background-color: white;
-            padding: 1em 0.5em;
-            box-shadow: 0.5em 0.5em 0  0 $feature;
-            color: black;
-            border: 1px solid $feature;
-            margin-bottom: 15%;
-            margin-top: 10%;
+            // background-color: white;
+            // padding: 1em;
+            // box-shadow: 0.5em 0.5em 0  0 $feature;
+            // color: black;
+            border-bottom: 2px solid $feature;
             width: 80vw
         }
-
-        .welcome-d{
-            display: none;
-            background-color: $feature;
-            padding: 3em;
-            box-shadow: 1em 1em 0  0 black;
-            color: white;
-            margin-bottom: 15%;
-            margin-top: 10%;
-        }  
     }
 
     .menu-options{

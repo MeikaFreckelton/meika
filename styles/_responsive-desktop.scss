@@ -287,18 +287,6 @@
             h4{
                 font-size: 3vw;
             }
-            .welcome{
-                display: none;
-            }
-
-            .welcome-d{
-                display: inline-block;
-                margin-bottom: 10%;
-                
-                h4{
-                    color: white;
-                }
-            }
 
             .landing{
                 display: flex;
@@ -343,7 +331,7 @@
                 .odd-item{
                     display: inline-block;
                     a{
-                        font-size: 1.3em;
+                        font-size: 1em;
                         line-height: 1.5;
                     }
                     
