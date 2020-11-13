@@ -287,6 +287,15 @@ p {
   width: 100%;
 }
 
+.contact-parts #contact-links {
+  padding-top: 5%;
+}
+
+.contact-parts #contact-links a {
+  padding-right: 10%;
+  font-size: 2rem;
+}
+
 .contact-parts .contactme {
   text-align: center;
 }
@@ -385,6 +394,11 @@ p {
   line-height: 1.5;
   -webkit-box-shadow: 0.3em 0.3em 0 0 #006aff;
           box-shadow: 0.3em 0.3em 0 0 #006aff;
+}
+
+.contact-parts .details .c-details .contact-icon {
+  width: 8vw;
+  max-height: 2vh;
 }
 
 footer {
@@ -918,10 +932,11 @@ footer .copyrights {
     font-size: 3.75em;
   }
   .copyr {
-    font-size: 1.35em;
+    font-size: 3em;
   }
   .copyr p {
     padding-bottom: 15%;
+    font-size: 2em;
   }
   #profile .pfp {
     margin: 0 6% 0;
@@ -1048,6 +1063,10 @@ footer .copyrights {
   footer .copyrights .copy-copyright p {
     line-height: 3;
     padding-left: 0;
+  }
+  .contact-parts #contact-links a {
+    padding-right: 10%;
+    font-size: 4rem;
   }
   .contact-parts .message-forms input[type=text], .contact-parts .message-forms select, .contact-parts .message-forms textarea {
     font-size: 2em;
@@ -1264,9 +1283,7 @@ footer .copyrights {
     font-size: 3vw;
   }
   .navbar {
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 15%;
-    padding: 0;
+    position: absolute;
   }
   .navbar .icon {
     display: none;
@@ -1279,23 +1296,24 @@ footer .copyrights {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    font-size: 1.5vw;
-    line-height: 3.5;
+    font-size: 1vw;
     font-family: raleway;
   }
   .navbar #myLinks a {
     font-size: 1em;
   }
+  .navbar .hamburger-icon {
+    display: none;
+  }
   .navbar .logo-wrap {
     background: none;
+    display: none;
   }
   .navbar .logo h1 {
     font-size: 2vw;
   }
   .navbar .desktop-logo {
     display: block;
-    padding: 0;
-    line-height: 50%;
   }
   .navbar .desktop-logo .no-hover {
     display: none;
@@ -1311,7 +1329,12 @@ footer .copyrights {
   }
   .navbar .main-nav li {
     background-color: rgba(255, 255, 255, 0);
-    padding: 0.5%;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar .main-nav li img {
+    width: 60%;
+    padding: 0;
   }
   #page-wrapper-i {
     margin: 0 auto;
@@ -1343,12 +1366,14 @@ footer .copyrights {
     width: 60vh;
   }
   #page-wrapper-i .menu-options ul {
+    width: 60vw;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-bottom: 20%;
   }
   #page-wrapper-i .menu-options ul li {
     width: 32%;
@@ -1357,8 +1382,8 @@ footer .copyrights {
     display: inline-block;
   }
   #page-wrapper-i .menu-options ul .odd-item a {
-    font-size: 1em;
-    line-height: 1.5;
+    font-size: 0.75em;
+    line-height: 1.75;
   }
   .copyr {
     display: none;

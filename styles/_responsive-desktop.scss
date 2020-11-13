@@ -240,27 +240,33 @@
     // menu 
 
     .navbar {
-        background-color: rgba(255, 255, 255, 0.50);
+        // background-color: rgba(255, 255, 255, 0.50);
         
-        height: 15%;
-        padding: 0;
+        // height: 8%;
+        // padding: 3%;
         .icon{display:none;}
+        position: absolute;
 
         #myLinks{
             display: flex !important;
             flex-direction: row;
-            font-size: 1.5vw;
-            line-height: 3.5;
+            font-size: 1vw;
+            // line-height: 3;
             font-family: raleway;
+            
 
             a{
                 font-size: 1em;
                
             }
         }
+        .hamburger-icon{
+            display: none;
+        }
 
         .logo-wrap{
             background: none;
+            display: none;
         }
                 
         .logo h1{
@@ -268,8 +274,7 @@
         }
         .desktop-logo{
             display:block;
-            padding: 0;
-            line-height: 50%;
+            
             .no-hover{
                 display: none;
             }
@@ -289,7 +294,15 @@
         .main-nav{
             li{
                 background-color: rgba(255, 255, 255, 0.0);
-                padding: 0.5%;
+                padding: 0;
+                margin: 0;
+                
+                img{
+                    width: 60%;
+                    padding: 0;
+                }
+
+                // height: 20%;
                 
             }
         }
@@ -340,8 +353,10 @@
         
             
             ul{
+                width: 60vw;
                 flex-direction: row;
                 flex-wrap: wrap;
+                padding-bottom: 20%;
 
                 li{
                     width: 32%;
@@ -353,8 +368,8 @@
                 .odd-item{
                     display: inline-block;
                     a{
-                        font-size: 1em;
-                        line-height: 1.5;
+                        font-size: 0.75em;
+                        line-height: 1.75;
                     }
                     
                 }

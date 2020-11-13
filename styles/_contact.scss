@@ -23,6 +23,18 @@
     .copyr{
         width: 100%;
     }
+
+    #contact-links{
+        padding-top: 5%;
+        
+        a{
+            padding-right: 10%;
+            
+            font-size: 2rem;
+        }
+
+        
+    }
     
 
 
@@ -32,6 +44,8 @@
     }
 
     .message-forms{
+
+
         
         
         
@@ -110,6 +124,13 @@
             width: 78vw;
             line-height: 1.5;
             box-shadow: 0.3em 0.3em 0 0 $feature;
+
+            .contact-icon{
+                width: 8vw;
+  
+                max-height: 2vh;
+                
+            }
             
         }
     

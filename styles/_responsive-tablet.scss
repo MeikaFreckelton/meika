@@ -81,9 +81,10 @@
 
     .copyr{
 
-        font-size: 1.35em;
+        font-size: 3em;
         p{
             padding-bottom: 15%;
+            font-size: 2em;
 
 
         }
@@ -360,6 +361,18 @@
     // contact page
 
     .contact-parts{
+
+        #contact-links{
+ 
+            
+            a{
+                padding-right: 10%;
+                
+                font-size: 4rem;
+            }
+    
+            
+        }
         .message-forms{
 
 
@@ -395,6 +408,7 @@
             .c-details{
 
                 box-shadow: 0.5em 0.55em 0 0 $feature;
+
             }
         }
     }
