@@ -232,57 +232,58 @@
     // menu 
 
     .navbar {
-        // background-color: rgba(255, 255, 255, 0.50);
-        
-        // height: 8%;
-        // padding: 3%;
-        .icon{display:none;}
         position: absolute;
+        background-color: white;
+        height: 6vh;
+
+
+        .logo-wrap{
+            display: none;
+        }
 
         #myLinks{
             display: flex !important;
             flex-direction: row;
             font-size: 1vw;
-            // line-height: 3;
             font-family: raleway;
             
 
             a{
-                font-size: 1em;
+                
+                font-size: 1.25em;
+
                
             }
+            li{
+                padding-top: 0.5%;
+
+
+                
+
+            }
+
+            .logo-txt{
+                font-family: lust-script-display, sans-serif;
+                font-size: 1.65em;
+                padding-left: 5%;
+                
+                margin: 0;
+            }
+
+            .logo-li{
+                padding-top: 0.25%;
+
+            }
+
+            
         }
         .hamburger-icon{
             display: none;
         }
+                
+    
+        
 
-        .logo-wrap{
-            background: none;
-            display: none;
-        }
-                
-        .logo h1{
-            font-size: 2vw;
-        }
-        .desktop-logo{
-            display:block;
-            
-            .no-hover{
-                display: none;
-            }
-            &:hover{
-                .no-hover{
-                    display: block;
-                }
-                .hover{
-                    display: none;
-                }
-                
-            }
-        }
-        .mobile-logo{
-            display: none;
-        }
         .main-nav{
             li{
                 background-color: rgba(255, 255, 255, 0.0);

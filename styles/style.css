@@ -1318,8 +1318,10 @@ footer .copyrights {
   }
   .navbar {
     position: absolute;
+    background-color: white;
+    height: 6vh;
   }
-  .navbar .icon {
+  .navbar .logo-wrap {
     display: none;
   }
   .navbar #myLinks {
@@ -1334,31 +1336,21 @@ footer .copyrights {
     font-family: raleway;
   }
   .navbar #myLinks a {
-    font-size: 1em;
+    font-size: 1.25em;
+  }
+  .navbar #myLinks li {
+    padding-top: 0.5%;
+  }
+  .navbar #myLinks .logo-txt {
+    font-family: lust-script-display, sans-serif;
+    font-size: 1.65em;
+    padding-left: 5%;
+    margin: 0;
+  }
+  .navbar #myLinks .logo-li {
+    padding-top: 0.25%;
   }
   .navbar .hamburger-icon {
-    display: none;
-  }
-  .navbar .logo-wrap {
-    background: none;
-    display: none;
-  }
-  .navbar .logo h1 {
-    font-size: 2vw;
-  }
-  .navbar .desktop-logo {
-    display: block;
-  }
-  .navbar .desktop-logo .no-hover {
-    display: none;
-  }
-  .navbar .desktop-logo:hover .no-hover {
-    display: block;
-  }
-  .navbar .desktop-logo:hover .hover {
-    display: none;
-  }
-  .navbar .mobile-logo {
     display: none;
   }
   .navbar .main-nav li {
