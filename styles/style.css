@@ -75,6 +75,14 @@ p {
   width: 100%;
 }
 
+.navbar .logo-wrap .logo-txt-mobile {
+  font-family: lust-script;
+  font-size: 1.5em;
+  padding: 1.5% 3%;
+  position: absolute;
+  top: 1%;
+}
+
 .navbar .logo-wrap img {
   height: 4%;
   position: relative;
@@ -116,9 +124,12 @@ p {
   list-style-type: none;
   display: none;
   position: absolute;
-  top: 10%;
   width: 100%;
   height: 100%;
+}
+
+.navbar .main-nav #desktop-logo {
+  display: none;
 }
 
 .navbar .main-nav li {
@@ -948,6 +959,9 @@ footer .copyrights {
   #profile .past-edu {
     margin-top: 10%;
   }
+  #profile .timeline {
+    width: 80vw;
+  }
   #profile .pfp {
     margin: 0 6% 0;
     width: 40vw;
@@ -1022,18 +1036,23 @@ footer .copyrights {
   h4 {
     font-size: 2.5em;
   }
-  .mobile-container #myLinks {
-    top: 12%;
+  .mobile-container {
+    height: 10vh;
   }
   .mobile-container #myLinks a {
     font-size: 4vw;
   }
   .mobile-container .navbar .logo-wrap {
-    height: 12%;
-    top: 13%;
+    height: 6%;
+    top: 0;
+  }
+  .mobile-container .navbar .logo-wrap .logo-txt-mobile {
+    font-size: 2em;
+    padding: 0 3%;
   }
   .mobile-container .navbar .hamburger-icon {
-    padding: 5vw;
+    padding: 1.5% 3%;
+    font-size: 2em;
   }
   .projects-imgs .projects-rows .container1 img {
     height: 30vh;
@@ -1044,18 +1063,6 @@ footer .copyrights {
   }
   .projects-imgs .projects-rows .container1 .centered p {
     font-size: 1.75rem;
-  }
-  .blog-parts h3 {
-    top: 15%;
-  }
-  .centered p {
-    font-size: 3em;
-  }
-  .centered h6 {
-    font-size: 2em;
-  }
-  .copyrights-end-m .copyright-f #copy-id {
-    font-size: 2em;
   }
   footer li {
     line-height: 0.9;
@@ -1119,9 +1126,6 @@ footer .copyrights {
   }
   .skills .skills-row .skill-item .rating {
     font-size: 5vw;
-  }
-  .blog-page {
-    top: 13%;
   }
 }
 
@@ -1335,11 +1339,14 @@ footer .copyrights {
     font-size: 1vw;
     font-family: raleway;
   }
+  .navbar #myLinks #desktop-logo {
+    display: block;
+  }
   .navbar #myLinks a {
     font-size: 1.25em;
   }
   .navbar #myLinks li {
-    padding-top: 0.5%;
+    padding-top: 1%;
   }
   .navbar #myLinks .logo-txt {
     font-family: lust-script-display, sans-serif;
@@ -1348,7 +1355,7 @@ footer .copyrights {
     margin: 0;
   }
   .navbar #myLinks .logo-li {
-    padding-top: 0.25%;
+    padding-top: 0.6%;
   }
   .navbar .hamburger-icon {
     display: none;

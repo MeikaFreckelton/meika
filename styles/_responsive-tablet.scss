@@ -97,7 +97,12 @@
 
         .past-edu{
             margin-top: 10%;
+            
         }
+        .timeline{
+            width: 80vw;
+        }
+
 
         .pfp{
 
@@ -213,10 +218,8 @@
     }
 
     .mobile-container{
+        height: 10vh;
         #myLinks {
-
-
-            top: 12%;
 
 
             a{
@@ -227,13 +230,19 @@
         .navbar{
 
 
+
             .logo-wrap{
 
-                height: 12%;
-                top: 13%;
+                height: 6%;
+                top: 0;
+                .logo-txt-mobile{
+                    font-size: 2em;
+                    padding: 0 3%;
+                }
             }
             .hamburger-icon{
-                padding: 5vw;
+                padding: 1.5% 3%;
+                font-size: 2em;
             }
         }
           
@@ -269,30 +278,6 @@
     
 
 
-    // blog -------------------------------------------------
-    .blog-parts{
-
-        h3{
-            top: 15%;
-
-
-        }
-    }
-
-    .centered {
-        p{
-            font-size: 3em;
-        }
-
-        h6{
-            font-size: 2em;
-        }
-    }
-    .copyrights-end-m .copyright-f{
-        #copy-id{
-            font-size: 2em;
-        }
-    }
 
 
     // footer ------------------------------------------
@@ -454,12 +439,6 @@
         
     }
 
-
-
-    .blog-page{
-
-        top: 13%;
-    }
 
     
     
