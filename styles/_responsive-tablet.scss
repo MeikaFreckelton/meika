@@ -54,7 +54,7 @@
     // wireframes
     .gallery{
 
-        .mobile-images{
+        .mobile-images, .tablet-images, .desktop-images{
 
 
             p{
@@ -81,9 +81,10 @@
 
     .copyr{
 
-        font-size: 1.35em;
+        font-size: 3em;
         p{
             padding-bottom: 15%;
+            font-size: 2em;
 
 
         }
@@ -93,6 +94,15 @@
     // about me ------------------------------------------
 
     #profile{
+
+        .past-edu{
+            margin-top: 10%;
+            
+        }
+        .timeline{
+            width: 80vw;
+        }
+
 
         .pfp{
 
@@ -159,20 +169,16 @@
             .landing{
                 .landing-contents{
                     padding-top: 40%;
+                    font-size: 2rem;
                 }
             }
-
 
             .welcome{
-
-                padding: 2em 5em;
-                margin-bottom: 5%;
-                h4{
-                    font-size: 2.9em;
-                }
-                
-
+                font-size: 1rem;
             }
+
+
+        
 
         }
 
@@ -212,10 +218,8 @@
     }
 
     .mobile-container{
+        height: 10vh;
         #myLinks {
-
-
-            top: 12%;
 
 
             a{
@@ -226,78 +230,54 @@
         .navbar{
 
 
+
             .logo-wrap{
 
-                height: 12%;
-                top: 13%;
+                height: 6%;
+                top: 0;
+                .logo-txt-mobile{
+                    font-size: 2em;
+                    padding: 0 3%;
+                }
             }
             .hamburger-icon{
-                padding: 5vw;
+                padding: 1.5% 3%;
+                font-size: 2em;
             }
         }
-        
-        
-        // .centered{
-        //     font-size: 4em;
-        //     .navbar {
-
-
-        //         .main-nav{
-        //             top: 12%;
-                    
-        //         }
-        //         .logo-wrap{
-        //             height: 12%;
-
-        //         }
-
-        //         .icon{
-        //         padding: 5vw;     
-        //         }
-
-                
-        //     }
-
-        // }   
+          
     }
 
 
 
     // projects ------------------------------------------------
 
-    .container1{
-        .centered{
-            font-size: 1em;
-        }
+    .projects-imgs{
 
+        .projects-rows{
 
-    }
+            .container1{
 
+                img{
+                    height: 30vh;
+                    padding: 2%;
+                }
 
-    // blog -------------------------------------------------
-    .blog-parts{
-
-        h3{
-            top: 15%;
-
-
-        }
-    }
-
-    .centered {
-        p{
-            font-size: 3em;
-        }
-
-        h6{
-            font-size: 2em;
+                .centered{
+                    font-size: 0.7em;
+                    p{
+                        font-size: 1.75rem;
+                    }
+                }
+        
+        
+            }
         }
     }
-    .copyrights-end-m .copyright-f{
-        #copy-id{
-            font-size: 2em;
-        }
-    }
+
+    
+
+
 
 
     // footer ------------------------------------------
@@ -360,6 +340,18 @@
     // contact page
 
     .contact-parts{
+
+        #contact-links{
+ 
+            
+            a{
+                padding-right: 10%;
+                
+                font-size: 4rem;
+            }
+    
+            
+        }
         .message-forms{
 
 
@@ -395,6 +387,7 @@
             .c-details{
 
                 box-shadow: 0.5em 0.55em 0 0 $feature;
+
             }
         }
     }
@@ -404,9 +397,7 @@
     .skills{
 
 
-        h4{
-            color: $feature;
-        }
+        
         
 
 
@@ -448,12 +439,6 @@
         
     }
 
-
-
-    .blog-page{
-
-        top: 13%;
-    }
 
     
     

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/86a9ff069d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/isw3mwx.css">
+
+
     <script>
         function myFunction() {
             var x = document.getElementById("myLinks");
@@ -24,11 +26,14 @@
     <div class="mobile-container">
         <nav class="navbar" id="mytopnav">
             <div class="logo-wrap">
-                <a href="#" class="logo mobile-logo m-no-hover"><img src="SVG/mbile-pink.svg" alt="logo"></a>
-                <a href="#" class="logo mobile-logo m-hover"><img src="SVG/mbile-black.svg" alt="logo"></a>
+                <a href="index.html" class="logo mobile-logo m-hover logo-txt-mobile">Meika Freckelton</a>
             </div>
                 <div class="menu-wrap">
                 <ul class="main-nav" id="myLinks">
+                    <li class="logo-li"id="desktop-logo">
+                        <a href="index.html" class="logo mobile-logo m-hover logo-txt" >Meika Freckelton</a>
+                    
+                    </li>
                     <li>
                         <a href="index.html" class="nav-links">Home</a>
                     </li>
@@ -39,16 +44,11 @@
                         <a href="about.html#to-skills" class="nav-links">Skills</a>
                         
                     </li>
-                    <li class="desktop-logo">
-                        <a href="#" class="logo no-hover"><img src="SVG/desktop-pink.svg" alt="logo"></a>
-                        <a href="#" class="logo hover"><img src="SVG/desktop-black.svg" alt="logo"></a>
-                    </li>
+                    
                     <li>
-                        <a href="about.html#to-projects" class="nav-links">Projects</a>
+                        <a href="projects.html" class="nav-links">Projects</a>
                     </li>
-                    <li>
-                        <a href="blog.html" class="nav-links">Blog</a>
-                    </li>
+                    
                     <li>
                         <a href="contact.html" class="nav-links">Contact</a>
                     </li>
@@ -63,7 +63,10 @@
 
     <!-- about section --------------- -->
     <main class="about-me" id="profile">
-        <h3>ABOUT ME</h3>
+        <div class="heading">
+            <h3>ABOUT ME</h3>
+        </div>
+        
         <div class="row container">
             <div class="tab-columns">
                 <div class="column-1">
@@ -72,7 +75,7 @@
                     </div>
 
                     <div class="resume">
-                        <a href="#" class="resume-link">my resume</a>
+                        <a target="_blank" href="/resume/resume.pdf" class="resume-link">my resume</a>
                     </div>
                 </div>
 
@@ -98,7 +101,8 @@
             <div class="col-8">
                 <h4 class="past-edu"><span class="feature-icon">></span>  past education</h4>
                 <div class="container-a">
-                <img src="SVG/timeline.svg" alt="timeline" class="timeline">
+                    <img src="SVG/timeline-m.svg" alt="timeline" class="timeline">
+                    <img src="SVG/timeline-d.svg" alt="timeline" class="timeline-d">
                 </div>
             </div>
             
@@ -109,7 +113,7 @@
 
         <section class="skills">
             <h3><a name="to-skills">SKILLS</a></h3>
-            <h4 id="design"><span class="feature-icon"></span> > development </h4>
+            <h4 class="skill-heading"><span class="feature-icon"></span> > development </h4>
             <div class="skills-row skills-margin-b" >
                 <div class="skill-item">
                     <img src="img/skills/SVG/exp.svg" alt="css" class="skill-img img-f" id="express">
@@ -119,7 +123,7 @@
                 <div class="skill-item">
                     <img src="img/skills/SVG/react.svg" alt="ruby" class="skill-img ruby img-f">
                     <p>React</p>
-                    <p class="rating">★★☆☆☆</p>
+                    <p class="rating">★★★☆☆</p>
                 </div>
                 <div class="skill-item">
                     <img src="img/skills/SVG/node.svg" alt="html" class="skill-img img-f" id="node">
@@ -130,7 +134,7 @@
             <div class="skills-row skills-margin-b">
                 <div class="skill-item ">
                     <img src="img/skills/SVG/mongo.svg" alt="css" class="skill-img img-f" id="mongo">
-                    <p>Mongo DB</p>
+                    <p class="mongo">Mongo DB</p>
                     <p class="rating">★★☆☆☆</p>
                 </div>
                 <div class="skill-item">
@@ -165,7 +169,7 @@
                 </div>   -->
             </div>
 
-            <h4 id="design"><span class="feature-icon">></span> design </h4>
+            <h4 class="skill-heading"><span class="feature-icon">></span> design </h4>
             <div class="skills-row skills-margin-b">
                 <div class="skill-item">
                     <img src="img/skills/css.svg" alt="css" class="skill-img img-f">
@@ -206,37 +210,7 @@
         </section>
 
 
-        <section class="projects-a">
-            <h3>PROJECTS</h3>
-            <div class="row container projects-imgs ">
-                <div class="projects-rows">
-                    </a>
-                        <div class="container1 f-img col-9">
-                            <a href="https://github.com/MeikaFreckelton/MidnightSnack" target="_blank">
-                            <img src="img/project-img/1x/midnightsnack.png" alt="ruby-app">
-                            <div class="centered"><p>Ruby terminal game</p></div>
-                        </a>
-                        </div>
-
-                    
-                    <div class="container1 col-9">
-                        <a href="site_wireframes.html">
-                            <img src="img/project-img/1x/ui.jpg" alt="UI/UX">
-                            <div class="centered"><p>Project Wireframe Design</p></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="container1 last-img">
-                    <img src="img/project-img/1x/code.jpg" alt="web-design">
-                    <div class="centered"><p>website design & development</p></div>
-                </div>
-                
-                
-    
-            </div>
-
-
-        </section>
+        
 
         <div class="copyr">
             <p class="copyright-f copy-copyright">&copy Copyright Meika Freckelton | 2020</p>
@@ -247,9 +221,9 @@
         <ul>
             <li><p class="copy-c">&copy</p></li>
             <li><p class="copyright-d">copyright Meika Freckelton | 2020</p></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="https://github.com/MeikaFreckelton"><i class="fab fa-github"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/meikafreckelton""><i class="fab fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/meika-freckelton-269741195/"><i class="fab fa-linkedin"></i></a></li>
         </ul>
     </footer>  
 </body>

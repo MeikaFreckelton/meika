@@ -23,11 +23,6 @@
 
     // wireframes
     .gallery{
-
-        // width: 100vw;
-       
-        
-
         .mobile-images{
             display: flex;
             flex-direction: row;
@@ -50,96 +45,27 @@
 
 
 
-
-    .blog-page{
-        
-
-        top: 20%;
-        img{
-            object-fit: cover;
-            height: 50vh
-        }
-
-        .title{
-
-            p{
-
-                font-size: 2vw;
-            }
-
-
-        }
-
-        h4{
-            font-size: 5vw;
-        }
-
-        p{
-            font-size: 2vw;
-        }
-
-
-
-
-    }
+    
     
     // ---------------------------------------
 
     // about me ----------------------------
 
-    .projects-a{
-
-        text-align: center;
-        .container{
-            display: flex;
-            flex-direction: column;
-            // margin-left: 30%;
-            
-
-            justify-content: center;
-        }
-
-        .container1{
-            text-align: center;
-        }
-
-        .projects-rows{
-
-            display: flex;
-            flex-direction: row;
-
-
-            
-        }
-
-        .f-img{
-            margin: 0;
-        }
-
-        .container img{
-            height: 30vh;
-
-
-        } 
-
-    }
-
-    
-
-
-
-
-
     #profile{
         top: 15%;
+
+
+
+        .skill-heading{
+            margin-left: 10%;
+        }
 
         h4{
             margin-bottom: 5%;
         }
 
         .pfp{
-            width: 25vw;
-            margin: 10% 5%;
+            width: 20vw;
         }
         .tab-columns{
             width: 60vw;
@@ -148,17 +74,12 @@
         }
 
         .resume{
-            padding: 0 0 0 30%;
-
-
-
-
+            padding: 10% 0 0 10%;
         }
 
         .resume-link{
             font-size: 2vw;
-            
-
+            padding: 5% 20%;
         }
 
         .column-1{
@@ -170,64 +91,135 @@
         .column-2{
 
             width: 28vw;
+
             
         }
 
         ol li{
-            font-size: 1.5vw;
-            line-height: 2;
+            font-size: 1.25vw;
+            line-height: 1.25;
+
         }
 
+        .container-a{
+
+            .timeline{
+                display: none;
+            }
+            .timeline-d{
+                display: block;
+                width: 100%;
+                padding: 5%;
+            }
+        }
+
+        
 
 
+
+    }
+
+    .projects-a{
+        padding-top: 4%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 8%;
+
+        .projects-imgs{
+            
+            
+
+
+            .projects-rows{
+                width: 80vw;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .centered{
+                    background-color: white;
+                    border: 5px solid $feature;
+                    padding: 1%;
+
+                    p{
+                        font-size: 1.35rem;
+                        color: $feature;
+                    }
+                }
+
+                img{
+                    width: 20vw;
+                    height: 30vh;
+                    padding: 2.5%;
+                    margin: 3% 0;
+                    background-color: $feature;
+                }
+
+                .container1{
+                    width: 30vw;
+                    flex-basis: 33.333333%
+
+                }
+            }
+        }
     }
 
 
     .skills{
 
         
-        
 
-
-
-
-        #row-last{
-
-
-            height: 47vh;
-        }
 
         .skills-row{
 
             justify-content: space-around;
-            margin: 0 auto;
+            margin: 4% auto;
             
 
 
-            width: 100%;
+            width: 80%;
             height: 40vh;
-            margin: 0;
-            padding-top: 4%;
+            padding-top: 3%;
 
 
             .skill-item{
 
 
-                
+                width: 30%;
+                height: 30%;
 
                 margin: 0;
 
 
                 p{
 
-                    font-size: 3vw;
+                    font-size: 2em;
                     padding: 2%;
                 }
 
 
+
                 .rating{
 
-                    font-size: 3vw;
+                    font-size: 2em;
+                }
+
+                #mongo{ //mongo img
+                    margin-right: 0;
+                    height: 5rem;
+                    
+                }
+                .mongo{ //mongo txt
+                    padding-top: 5%;
+                }
+                
+
+                .skill-img{
+                    height: 6rem;
                 }
 
             }
@@ -240,56 +232,74 @@
     // menu 
 
     .navbar {
-        background-color: rgba(255, 255, 255, 0.50);
-        
-        height: 15%;
-        padding: 0;
-        .icon{display:none;}
+        position: absolute;
+        background-color: white;
+        height: 6vh;
+
+
+        .logo-wrap{
+            display: none;
+        }
 
         #myLinks{
             display: flex !important;
             flex-direction: row;
-            font-size: 1.5vw;
-            line-height: 3.5;
+            font-size: 1vw;
             font-family: raleway;
 
+            #desktop-logo{
+                display: block;
+            }
+            
+
             a{
-                font-size: 1em;
+                
+                font-size: 1.25em;
+
                
             }
-        }
+            li{
+                padding-top: 1%;
 
-        .logo-wrap{
-            background: none;
-        }
+
                 
-        .logo h1{
-            font-size: 2vw;
-        }
-        .desktop-logo{
-            display:block;
-            padding: 0;
-            line-height: 50%;
-            .no-hover{
-                display: none;
+
             }
-            &:hover{
-                .no-hover{
-                    display: block;
-                }
-                .hover{
-                    display: none;
-                }
+
+            .logo-txt{
+                font-family: lust-script-display, sans-serif;
+                font-size: 1.65em;
+                padding-left: 5%;
                 
+                margin: 0;
             }
+
+            .logo-li{
+                padding-top: 0.6%;
+
+            }
+
+            
         }
-        .mobile-logo{
+        .hamburger-icon{
             display: none;
         }
+                
+    
+        
+
         .main-nav{
             li{
                 background-color: rgba(255, 255, 255, 0.0);
-                padding: 0.5%;
+                padding: 0;
+                margin: 0;
+                
+                img{
+                    width: 60%;
+                    padding: 0;
+                }
+
+                // height: 20%;
                 
             }
         }
@@ -320,44 +330,55 @@
                     
                     h4{
                         color: black;
+                        font-size: 1em;
                     }
 
                 }
             }
+            .welcome{
+                h4{
+                    font-size: 3em;
+                }
+                
+            }
 
             .desktop-logos{
                 #PinkLogo{
-                    width: 60vh;
+                    width: 30vw !important;
                 }
                 #BlackLogo{
-                    width: 60vh;
+                    width: 30vw !important;
                 }
             }
         }
 
         .menu-options{
+
             
         
             
             ul{
+                width: 80vw;
+                display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-
+                padding-bottom: 20%;
                 li{
-                    width: 32%;
-
-                   
+                    width: 100%;
                 }
 
-
-                .odd-item{
-                    display: inline-block;
-                    a{
-                        font-size: 1em;
-                        line-height: 1.5;
+                a{
+                    width: 48%;
+                    // padding: 3% 10%;
+                }
+                .odd-item-d{
+                    display: block;
+                    width:100%;
+                    li{
+                        margin: 3% 0;
                     }
-                    
                 }
+
             }
 
             
@@ -421,89 +442,6 @@
         img{
             width: 70vw;
             height: 40vh;
-        }
-    }
-
-
-    // blog ----------------------------------------
-
-
-    .blog-parts{
-        max-width: 100%;
-        margin: 0 auto;
-        top: 20%;
-        
-        // padding-bottom: 5%;
-
-        h3{
-            top: 25%;
-            padding: 0;
-            &:hover{
-                color: $feature;
-            }
-        }
-
-        .img-first{
-            margin-top: 10%;
-        }
-
-        .centered{
-
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 100%;
-            color: white;
-            p{
-                font-size: 2vw;
-                
-            }
-
-            h6{
-
-                border: none;
-                margin: 0;
-                text-align: center;
-                color: white;
-            }
-        }
-
-   
-
-        .container{ 
-            top: 20%;
-
-            .container1{
-                padding: 1%;
-
-                img{
-                    object-fit: cover;
-                    width: 60vw;
-                    height: 20vw;
-                    box-shadow:6px 7px 0px 0px $feature;
-
-                    
-
-                }
-
-
-                .centered{
-
-                    h6{
-
-                        width: 100%;
-                        color: white;
-                        text-decoration: underline;
-
-                    }
-                }
-                
-
-            }
-
-            
         }
     }
     
