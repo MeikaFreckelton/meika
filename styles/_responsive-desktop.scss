@@ -182,7 +182,7 @@
 
 
             width: 80%;
-            height: 40vh;
+            height: 42vh;
             padding-top: 3%;
 
 
@@ -206,6 +206,7 @@
                 .rating{
 
                     font-size: 2em;
+                    
                 }
 
                 #mongo{ //mongo img
@@ -259,7 +260,7 @@
                
             }
             li{
-                padding-top: 1%;
+                padding-top: 0.5%;
 
 
                 
@@ -275,7 +276,7 @@
             }
 
             .logo-li{
-                padding-top: 0.6%;
+                padding-top: 0.3%;
 
             }
 
@@ -592,9 +593,22 @@
             }
           
             .c-details{
-                width: 50vw;
+                width: 40vw;
                 margin-top: 2%;
                 padding: 2%;
+                a{
+                    font-size: 2rem;
+                }
+                #contact-links{
+
+                    i{
+                        font-size: 4rem;
+
+                    }
+                    .first-link{
+                        padding-left: 7%;
+                    }
+                }
                 
             }
 

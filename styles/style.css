@@ -1295,7 +1295,7 @@ footer .copyrights {
         justify-content: space-around;
     margin: 4% auto;
     width: 80%;
-    height: 40vh;
+    height: 42vh;
     padding-top: 3%;
   }
   .skills .skills-row .skill-item {
@@ -1346,7 +1346,7 @@ footer .copyrights {
     font-size: 1.25em;
   }
   .navbar #myLinks li {
-    padding-top: 1%;
+    padding-top: 0.5%;
   }
   .navbar #myLinks .logo-txt {
     font-family: lust-script-display, sans-serif;
@@ -1355,7 +1355,7 @@ footer .copyrights {
     margin: 0;
   }
   .navbar #myLinks .logo-li {
-    padding-top: 0.6%;
+    padding-top: 0.3%;
   }
   .navbar .hamburger-icon {
     display: none;
@@ -1564,9 +1564,18 @@ footer .copyrights {
     font-size: 2.5vw;
   }
   .contact-parts .details .c-details {
-    width: 50vw;
+    width: 40vw;
     margin-top: 2%;
     padding: 2%;
+  }
+  .contact-parts .details .c-details a {
+    font-size: 2rem;
+  }
+  .contact-parts .details .c-details #contact-links i {
+    font-size: 4rem;
+  }
+  .contact-parts .details .c-details #contact-links .first-link {
+    padding-left: 7%;
   }
   .contact-parts .details .message {
     padding-left: 25%;
