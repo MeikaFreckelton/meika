@@ -1,6 +1,6 @@
 #profile {
     position: absolute;
-    top: 10%;
+    top: 5%;
     width: 100%;
     z-index: -1;
     display: flex;
@@ -71,6 +71,9 @@
     .timeline{
         margin: 5%;
         width: 90%;
+    }
+    .timeline-d{
+        display: none;
     }
 
     .container-a{

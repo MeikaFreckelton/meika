@@ -87,9 +87,7 @@
                 margin: 5% 0;
                 box-shadow: 0.5em 0.5em 0 0 black;
                 &:hover{
-                    background-color: black;
-                    
-                    box-shadow: 0.5em 0.5em 0 0 $feature;
+                    background-color: $feature;
                     a{
                         color: white;
                     }
@@ -98,7 +96,6 @@
                 a{
                     text-decoration: none;
                     color: $feature;
-                    
                     font-family: 'raleway', sans-serif;
                     font-size: 1em;      
                 }

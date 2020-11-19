@@ -236,43 +236,33 @@
                 padding: 5vw;
             }
         }
-        
-        
-        // .centered{
-        //     font-size: 4em;
-        //     .navbar {
-
-
-        //         .main-nav{
-        //             top: 12%;
-                    
-        //         }
-        //         .logo-wrap{
-        //             height: 12%;
-
-        //         }
-
-        //         .icon{
-        //         padding: 5vw;     
-        //         }
-
-                
-        //     }
-
-        // }   
+          
     }
 
 
 
     // projects ------------------------------------------------
 
-    .container1{
-        .centered{
-            font-size: 1em;
+    .projects-imgs{
+
+        .projects-rows{
+
+            .container1{
+
+                img{
+                    height: 30vh;
+                }
+
+                .centered{
+                    font-size: 0.7em;
+                }
+        
+        
+            }
         }
-
-
     }
+
+    
 
 
     // blog -------------------------------------------------

@@ -23,11 +23,6 @@
 
     // wireframes
     .gallery{
-
-        // width: 100vw;
-       
-        
-
         .mobile-images{
             display: flex;
             flex-direction: row;
@@ -87,49 +82,6 @@
 
     // about me ----------------------------
 
-    .projects-a{
-
-        text-align: center;
-        .container{
-            display: flex;
-            flex-direction: column;
-            // margin-left: 30%;
-            
-
-            justify-content: center;
-        }
-
-        .container1{
-            text-align: center;
-        }
-
-        .projects-rows{
-
-            display: flex;
-            flex-direction: row;
-
-
-            
-        }
-
-        .f-img{
-            margin: 0;
-        }
-
-        .container img{
-            height: 30vh;
-
-
-        } 
-
-    }
-
-    
-
-
-
-
-
     #profile{
         top: 15%;
 
@@ -138,8 +90,7 @@
         }
 
         .pfp{
-            width: 25vw;
-            margin: 10% 5%;
+            width: 20vw;
         }
         .tab-columns{
             width: 60vw;
@@ -148,17 +99,12 @@
         }
 
         .resume{
-            padding: 0 0 0 30%;
-
-
-
-
+            padding: 10% 0 0 10%;
         }
 
         .resume-link{
             font-size: 2vw;
-            
-
+            padding: 5% 20%;
         }
 
         .column-1{
@@ -170,64 +116,132 @@
         .column-2{
 
             width: 28vw;
+
             
         }
 
         ol li{
-            font-size: 1.5vw;
-            line-height: 2;
+            font-size: 1.25vw;
+            line-height: 1.25;
+
         }
+
+        .container-a{
+
+            .timeline{
+                display: none;
+            }
+            .timeline-d{
+                display: block;
+                width: 100%;
+                padding: 5%;
+            }
+        }
+
+        
 
 
 
     }
 
+    .projects-a{
+        padding-top: 4%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .projects-imgs{
+            
+            
+
+
+            .projects-rows{
+                width: 80vw;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .centered{
+                    background-color: white;
+                    border: 5px solid $feature;
+                    padding: 1%;
+
+                    p{
+                        font-size: 1.35rem;
+                        color: $feature;
+                    }
+                }
+
+                img{
+                    width: 20vw;
+                    height: 30vh;
+                    padding: 3%;
+                    margin: 3% 0;
+                    background-color: $feature;
+                }
+
+                .container1{
+                    width: 30vw;
+                    flex-basis: 33.333333%
+
+                }
+            }
+        }
+    }
+
 
     .skills{
 
-        
-        
-
-
-
-
-        #row-last{
-
-
-            height: 47vh;
-        }
 
         .skills-row{
 
             justify-content: space-around;
-            margin: 0 auto;
+            margin: 4% auto;
             
 
 
-            width: 100%;
+            width: 80%;
             height: 40vh;
-            margin: 0;
-            padding-top: 4%;
+            padding-top: 3%;
 
 
             .skill-item{
 
 
-                
+                width: 30%;
+                height: 30%;
 
                 margin: 0;
 
 
                 p{
 
-                    font-size: 3vw;
+                    font-size: 2em;
                     padding: 2%;
                 }
 
 
+
                 .rating{
 
-                    font-size: 3vw;
+                    font-size: 2em;
+                }
+
+                #mongo{ //mongo img
+                    margin-right: 0;
+                    height: 5rem;
+                    
+                }
+                .mongo{ //mongo txt
+                    padding-top: 5%;
+                }
+                
+
+                .skill-img{
+                    height: 6rem;
                 }
 
             }
@@ -333,6 +347,7 @@
                     
                     h4{
                         color: black;
+                        font-size: 2em;
                     }
 
                 }
@@ -340,10 +355,10 @@
 
             .desktop-logos{
                 #PinkLogo{
-                    width: 60vh;
+                    width: 30vw !important;
                 }
                 #BlackLogo{
-                    width: 60vh;
+                    width: 30vw !important;
                 }
             }
         }
