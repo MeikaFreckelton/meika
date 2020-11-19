@@ -69,36 +69,41 @@
             justify-content: space-between;
             width: 80vw;
             margin-bottom: 20%;
-            
-            .odd-item{
+            .odd-item-d{
                 display: none;
-                &:hover{
-                    box-shadow: 0.35em 0.35em 0 0 black;
-                    background-color: $feature;
-                }
             }
-        
-            li{
-                border: 1px solid black;
-                list-style-type: none;
-                // width: 100;
-                background-color: white;
-                padding: 0.65em;
-                margin: 5% 0;
-                box-shadow: 0.5em 0.5em 0 0 black;
-                &:hover{
-                    background-color: $feature;
-                    a{
-                        color: white;
-                    }
-                } 
+
+            a{
+                text-decoration: none;
+                color: $feature;
+                font-family: 'raleway', sans-serif;
+                font-size: 1em;    
                 
-                a{
-                    text-decoration: none;
-                    color: $feature;
-                    font-family: 'raleway', sans-serif;
-                    font-size: 1em;      
+                li{
+                    border: 1px solid black;
+                    list-style-type: none;
+                    // width: 100;
+                    background-color: white;
+                    padding: 0.65em;
+                    margin: 5% 0;
+                    box-shadow: 0.5em 0.5em 0 0 $feature;
+                     
+                    
+                    
+                }
+                &:hover{
+                    li{
+                        background-color: $feature;
+                    }
+                    
+                    
+                    color: white;
+                    
                 }
             }
+            
+            
+        
+            
     }   }
 }

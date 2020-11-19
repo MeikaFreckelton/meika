@@ -14,8 +14,11 @@
                 width: 100%;
                 object-fit: cover;
                 z-index: -1;
-                height: 20vh;
-                padding-bottom: 3%;
+                height: 30vh;
+                // padding-bottom: 3%;
+                background-color: $feature;
+                padding: 1%;
+                margin: 3% 0;
             }
     
             .centered{
@@ -25,6 +28,13 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                background-color: white;
+                border: 5px solid $feature;
+                padding: 1%;
+                p{
+                    font-size: 1.25rem;
+                    color: $feature;
+                }
             }
 
 
@@ -55,11 +65,12 @@
     img{
         height: 50vh;
         width: 100%;
-        margin-bottom: 1.5%;
+        // margin-bottom: 1.5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         object-fit: cover;
+        
         
 
     }

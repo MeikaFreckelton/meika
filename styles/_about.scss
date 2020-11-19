@@ -6,6 +6,14 @@
     display: flex;
     flex-direction: column;
 
+
+    .skill-heading{
+        margin: 5%;
+        &:hover{
+            color: $feature;
+        }
+    }
+
     h4{
         margin: 1% 5%;
         width: 90%;

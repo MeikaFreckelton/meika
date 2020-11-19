@@ -45,38 +45,7 @@
 
 
 
-
-    .blog-page{
-        
-
-        top: 20%;
-        img{
-            object-fit: cover;
-            height: 50vh
-        }
-
-        .title{
-
-            p{
-
-                font-size: 2vw;
-            }
-
-
-        }
-
-        h4{
-            font-size: 5vw;
-        }
-
-        p{
-            font-size: 2vw;
-        }
-
-
-
-
-    }
+    
     
     // ---------------------------------------
 
@@ -84,6 +53,12 @@
 
     #profile{
         top: 15%;
+
+
+
+        .skill-heading{
+            margin-left: 10%;
+        }
 
         h4{
             margin-bottom: 5%;
@@ -150,6 +125,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 8%;
 
         .projects-imgs{
             
@@ -178,7 +154,7 @@
                 img{
                     width: 20vw;
                     height: 30vh;
-                    padding: 3%;
+                    padding: 2.5%;
                     margin: 3% 0;
                     background-color: $feature;
                 }
@@ -194,6 +170,8 @@
 
 
     .skills{
+
+        
 
 
         .skills-row{
@@ -347,10 +325,16 @@
                     
                     h4{
                         color: black;
-                        font-size: 2em;
+                        font-size: 1em;
                     }
 
                 }
+            }
+            .welcome{
+                h4{
+                    font-size: 3em;
+                }
+                
             }
 
             .desktop-logos{
@@ -364,30 +348,32 @@
         }
 
         .menu-options{
+
             
         
             
             ul{
-                width: 60vw;
+                width: 80vw;
+                display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 padding-bottom: 20%;
-
                 li{
-                    width: 32%;
-
-                   
+                    width: 100%;
                 }
 
-
-                .odd-item{
-                    display: inline-block;
-                    a{
-                        font-size: 0.75em;
-                        line-height: 1.75;
+                a{
+                    width: 48%;
+                    // padding: 3% 10%;
+                }
+                .odd-item-d{
+                    display: block;
+                    width:100%;
+                    li{
+                        margin: 3% 0;
                     }
-                    
                 }
+
             }
 
             
@@ -451,89 +437,6 @@
         img{
             width: 70vw;
             height: 40vh;
-        }
-    }
-
-
-    // blog ----------------------------------------
-
-
-    .blog-parts{
-        max-width: 100%;
-        margin: 0 auto;
-        top: 20%;
-        
-        // padding-bottom: 5%;
-
-        h3{
-            top: 25%;
-            padding: 0;
-            &:hover{
-                color: $feature;
-            }
-        }
-
-        .img-first{
-            margin-top: 10%;
-        }
-
-        .centered{
-
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 100%;
-            color: white;
-            p{
-                font-size: 2vw;
-                
-            }
-
-            h6{
-
-                border: none;
-                margin: 0;
-                text-align: center;
-                color: white;
-            }
-        }
-
-   
-
-        .container{ 
-            top: 20%;
-
-            .container1{
-                padding: 1%;
-
-                img{
-                    object-fit: cover;
-                    width: 60vw;
-                    height: 20vw;
-                    box-shadow:6px 7px 0px 0px $feature;
-
-                    
-
-                }
-
-
-                .centered{
-
-                    h6{
-
-                        width: 100%;
-                        color: white;
-                        text-decoration: underline;
-
-                    }
-                }
-                
-
-            }
-
-            
         }
     }
     
