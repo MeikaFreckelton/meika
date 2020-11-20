@@ -34,6 +34,9 @@
         border: 2px solid $feature;
         padding: 1.5% 10%;
         box-shadow: 0.25em 0.25em 0 0;
+        z-index: 99;
+        cursor: pointer;
+        position: relative;
 
         &:hover{
             color: black;
@@ -47,9 +50,12 @@
     }
 
     .resume{
+
         text-align: center;
         margin: 6% 0 8%;
-        z-index: 1;
+        
+        
+
     }
 
     ol{
