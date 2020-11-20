@@ -435,6 +435,11 @@ footer {
   height: 8%;
 }
 
+footer .fab {
+  z-index: 99;
+  position: relative;
+}
+
 footer:hover .copyright-d {
   display: inline-block;
 }
@@ -491,8 +496,22 @@ footer .copyrights {
           justify-content: flex-end;
 }
 
+.footer-icons ul {
+  z-index: 99;
+}
+
+.footer-icons li {
+  z-index: 99;
+  position: relative;
+}
+
 .footer-icons li:hover {
   color: #006aff;
+}
+
+.footer-icons li a {
+  z-index: 99;
+  position: relative;
 }
 
 .footer-icons p {

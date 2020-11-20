@@ -10,6 +10,13 @@ footer{
     width: 100%;
     height: 8%;
 
+    .fab{
+        z-index: 99;
+        position: relative;
+    }
+
+    
+
 
 
     &:hover{
@@ -82,12 +89,22 @@ footer{
     justify-content: flex-end;
     
 
+    ul{
+        z-index: 99;
+        
+    }
 
     li{
+        z-index: 99;
+        position: relative;
 
         &:hover{
 
             color: $feature;
+        }
+        a{
+            z-index: 99;
+            position: relative;
         }
 
     }
