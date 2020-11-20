@@ -26,11 +26,14 @@
 
     #contact-links{
         padding-top: 5%;
+
         
         a{
             padding-right: 10%;
             
             font-size: 2rem;
+            z-index: 99;
+            position: relative;
         }
 
         
