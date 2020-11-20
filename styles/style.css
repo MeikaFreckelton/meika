@@ -213,6 +213,7 @@ p {
   padding: 1.5% 10%;
   -webkit-box-shadow: 0.25em 0.25em 0 0;
           box-shadow: 0.25em 0.25em 0 0;
+  z-index: 99;
   cursor: pointer;
   position: relative;
 }
@@ -232,7 +233,6 @@ p {
   text-align: center;
   margin: 6% 0 8%;
   position: relative;
-  z-index: 99;
 }
 
 #profile ol {
