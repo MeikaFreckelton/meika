@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: Raleway;
+}
+
+.heading {
+  text-align: center;
+  margin: 3% 0 2%;
+}
+
+.heading h1 {
+  font-size: 10vw;
+}
+
+#yellingGreeter {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#yellingGreeter #message {
+  width: 100%;
+  margin: 2% auto;
+  padding: 3%;
+}
+
+#yellingGreeter input {
+  padding: 0.15% 5% 0.15% 0.5%;
+}
+
+#yellingGreeter .yellBtn {
+  border: 1px solid #ff0000;
+  border-radius: 3px;
+  background-color: rgba(255, 117, 117, 0.3);
+  padding: 0.18% 3%;
+  margin-left: 1%;
+}
+
+#happyMessage {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#happyMessage #randomMessage {
+  background-color: #FAFAD3;
+  width: 100%;
+  margin: 10% auto;
+  padding: 5%;
+}
+
+#happyMessage #happyBtn {
+  border: 1px solid #ffff00;
+  background-color: #fff;
+  padding: 3%;
+  font-size: 1.5rem;
+}
+
+#businessCardWrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#businessCardWrapper .business-btn {
+  color: #000;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #2FCAB0;
+  padding: 2% 7%;
+  margin-top: 3%;
+}
+
+#businessCardWrapper #businessCard #name {
+  font-size: 1.75em;
+  margin: 0.35em 0.6em 0;
+  font-weight: 800;
+}
+
+#businessCardWrapper #businessCard #title {
+  margin: 0 0.9em;
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: 700;
+  border-bottom: 2px solid;
+  padding-bottom: 3%;
+}
+
+#businessCardWrapper #businessCard #phone {
+  margin: 0.7em 1em 0.3em;
+  font-size: 1em;
+}
+
+#businessCardWrapper #businessCard #email {
+  margin: 0.5em 1em;
+  font-size: 1em;
+}
+
+#businessCardWrapper #businessCard #address {
+  margin: 0.5em 1em;
+  font-size: 1em;
+}
+
+#businessCardWrapper .cardAndForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3%;
+  margin: 0 auto;
+}
+
+#businessCardWrapper .cardAndForm .bCard {
+  margin-right: 12%;
+}
+
+#businessCardWrapper .cardAndForm .bForm {
+  background-color: rgba(47, 202, 176, 0.1);
+  padding: 5%;
+}
+
+#businessCardWrapper .cardAndForm .bForm label {
+  min-width: 40vw;
+  margin-right: 3%;
+}
+
+#cookieClick {
+  margin: 0 auto;
+  width: 80vw;
+  text-align: center;
+}
+
+#cookieClick .displayCookie {
+  background-color: rgba(47, 202, 176, 0.5);
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#cookieClick .manualIncrease {
+  background-color: rgba(169, 188, 255, 0.5);
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#cookieClick .manualIncrease h2 {
+  margin-bottom: 3%;
+}
+
+#cookieClick .autoIncrease {
+  background-color: rgba(143, 210, 244, 0.5);
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+#cookieClick .autoIncrease h2, #cookieClick .autoIncrease h3, #cookieClick .autoIncrease h4 {
+  margin-bottom: 3%;
+}
+
+#cookieClick .autoIncrease .amount {
+  color: #006aff;
+}
+
+#cookieClick .count {
+  color: #006aff;
+}
+
+#cookieClick .cookieBtns {
+  color: #006aff;
+  border: 1px solid #006aff;
+  border-radius: 3px;
+  padding: 2% 5%;
+  cursor: pointer;
+}
+
+#cookieClick button {
+  background-color: #fff;
+}
+
+.twoots {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#editPostForm {
+  margin: 0 auto;
+  width: 75%;
+}
+
+#newTwootForm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10%;
+}
+
+#newTwootForm div {
+  width: 80%;
+}
+
+.billWrapper {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.billWrapper .btn {
+  color: #006aff;
+  border: 1px solid #006aff;
+  border-radius: 3px;
+  padding: 1% 5%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.billWrapper .bill-heading {
+  margin: 10%;
+}
+
+.billWrapper .total {
+  color: #006aff;
+}
+
+.billWrapper form {
+  background-color: aliceblue;
+  padding: 3%;
+  text-align: center;
+}
+
+#movie-wrapper #movie-list {
+  background-color: aliceblue;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+}
+
+#movie-wrapper #movie-list li {
+  margin-bottom: 2%;
+}
+
+#movie-wrapper #movie-list form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+#movie-wrapper #movie-list input[type=text] {
+  width: 55vw;
+  padding: 1% 2%;
+}
+
+#movie-wrapper #movie-list input[type=submit] {
+  color: #006aff;
+  background-color: #fff;
+  border: 1px solid #006aff;
+  border-radius: 3px;
+  padding: 1.2% 5%;
+  margin-left: 3%;
+  min-width: 5vw;
+}
+/*# sourceMappingURL=businessCard.css.map */

@@ -1,0 +1,340 @@
+$feature: #006aff;
+@import 'variables';
+
+*{
+    font-family: Raleway;
+}
+
+.heading{
+    text-align: center;
+    margin: 3% 0 2%;
+
+
+}
+
+.heading{
+    h1{
+        font-size: 10vw;
+    }
+}
+
+
+
+
+// yelling greeter : --------------------------------------------------
+
+#yellingGreeter{
+    width: 75%;
+    margin: 0 auto;
+
+    text-align: center;
+
+
+    #message{
+        // background-color: #ff7575;
+        width: 100%;
+        margin: 2% auto;
+        padding: 3%; 
+    }
+    input{
+        padding: 0.15% 5% 0.15% 0.5%; 
+    }
+
+    .yellBtn{
+        border: 1px solid #ff0000;
+        border-radius: 3px;
+        background-color: rgba(255, 117, 117, 0.3);
+        padding: 0.18% 3%;
+        margin-left: 1%;
+    }
+}
+
+
+
+
+
+
+// happy message : --------------------------------------------------
+
+#happyMessage{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+
+
+    #randomMessage{
+        background-color: #FAFAD3;
+        width: 100%;
+        margin: 10% auto;
+        padding: 5%;
+    }
+    #happyBtn{
+        border: 1px solid #ffff00;
+        background-color: #fff;
+        // border-radius: 3px;
+        padding: 3%;
+        font-size: 1.5rem;
+
+    }
+}
+
+
+
+
+
+
+
+// business card : --------------------------------------------------
+
+#businessCardWrapper{
+    // width: 75%;
+    margin: 0 auto;
+    // margin-left: 5em;
+    display: flex;
+
+    .business-btn{
+        color: #000;
+        border-radius: 3px;
+        background-color: #fff;
+        border: 1px solid $green;
+        padding: 2% 7%;
+        margin-top: 3%;
+    }
+
+
+    #businessCard{
+    
+        #name{
+            font-size: 1.75em;
+            margin:  0.35em 0.6em 0;
+            font-weight: 800;
+        }
+        #title{
+            margin: 0 0.9em;
+            font-size: 1.25em;
+            font-style: italic;
+            font-weight: 700;
+            border-bottom: 2px solid;
+            padding-bottom: 3%;
+    
+        }
+        #phone{
+            margin: 0.7em 1em 0.3em;
+            font-size: 1em
+        }
+        #email{
+            margin: 0.5em 1em;
+            font-size: 1em
+        }
+        #address{
+            margin: 0.5em 1em;
+            font-size: 1em
+        }
+    }
+
+    
+
+    .cardAndForm{
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        margin: 0 auto;
+        
+        .bCard{
+            margin-right: 12%;
+        }
+
+        .bForm{
+            background-color: rgba(47, 202, 176, 0.1);
+            padding: 5%;
+
+            
+
+            label{
+                min-width: 40vw;
+                margin-right: 3%;
+            }
+            
+                
+
+        
+            
+            
+        }
+    }
+
+
+    
+}
+
+
+// cookie clicker :
+
+#cookieClick{
+    margin: 0 auto;
+    width: 80vw;
+    // padding: 2% 2% 3%;
+    text-align: center;
+    // background-color: aliceblue;
+    .displayCookie{
+        background-color: rgba(47, 202, 176, 0.5);
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    .manualIncrease{
+        background-color: rgba(169, 188, 255, 0.5);
+        padding: 5%;
+        margin-bottom: 5%;
+
+        h2{
+            margin-bottom: 3%;
+        }
+
+    }
+
+    .autoIncrease{
+        background-color: rgba(143, 210, 244, 0.5);
+        padding: 5%;
+        margin-bottom: 5%;
+        
+        h2, h3, h4{
+            margin-bottom: 3%;
+        }
+
+        .amount{
+            color: $feature;
+        }
+
+    }
+
+    .count{
+        color: $feature;
+    }
+
+    .cookieBtns{
+        color: $feature;
+        
+        border: 1px solid $feature;
+        border-radius: 3px;
+        padding: 2% 5%;
+        cursor: pointer;
+
+    }
+    button{
+        background-color: #fff;
+    }
+
+}
+
+
+// tweeter :
+
+.twoots{
+    margin: 0 auto;
+    width: 80%;
+}
+
+#editPostForm{
+    margin: 0 auto;
+    width: 75%;
+}
+
+#newTwootForm{
+    // margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+
+    div{
+        width: 80%;
+    }
+}
+
+// bill and tip :
+
+.billWrapper{
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+
+    .btn{
+        color: $feature;
+        border: 1px solid $feature;
+        border-radius: 3px;
+        padding: 1% 5%;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+    .bill-heading{
+        margin: 10%;
+    }
+
+    .total{
+        color: $feature;
+    }
+
+    form{
+        background-color: aliceblue;
+        padding: 3%;
+        text-align: center;
+    }
+}
+
+// movie list :
+
+#movie-wrapper{
+
+    #movie-list{
+        background-color: aliceblue;
+        width:80vw;
+        margin: 0 auto;
+        padding: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.5rem;
+
+        li{
+            margin-bottom: 2%;
+        }
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 5%;
+
+
+
+        }
+
+        input[type=text]{
+            width: 55vw;
+            padding: 1% 2%;
+        }
+        input[type=submit]{
+            color: $feature;
+            background-color: #fff;
+            border: 1px solid $feature;
+            border-radius: 3px;
+            padding: 1.2% 5%;
+            margin-left: 3%;
+            min-width: 5vw;
+
+
+        }
+        
+    }
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+
