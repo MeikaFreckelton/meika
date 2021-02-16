@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/meikafreckelton.github.io/static/css/main.363c5463.chunk.css",
+    "main.js": "/meikafreckelton.github.io/static/js/main.5da468ec.chunk.js",
+    "main.js.map": "/meikafreckelton.github.io/static/js/main.5da468ec.chunk.js.map",
+    "runtime-main.js": "/meikafreckelton.github.io/static/js/runtime-main.279234bc.js",
+    "runtime-main.js.map": "/meikafreckelton.github.io/static/js/runtime-main.279234bc.js.map",
+    "static/js/2.5023d94b.chunk.js": "/meikafreckelton.github.io/static/js/2.5023d94b.chunk.js",
+    "static/js/2.5023d94b.chunk.js.map": "/meikafreckelton.github.io/static/js/2.5023d94b.chunk.js.map",
+    "index.html": "/meikafreckelton.github.io/index.html",
+    "static/css/main.363c5463.chunk.css.map": "/meikafreckelton.github.io/static/css/main.363c5463.chunk.css.map",
+    "static/js/2.5023d94b.chunk.js.LICENSE.txt": "/meikafreckelton.github.io/static/js/2.5023d94b.chunk.js.LICENSE.txt",
+    "static/media/birthday.982d8cdc.png": "/meikafreckelton.github.io/static/media/birthday.982d8cdc.png",
+    "static/media/dotdev.2e2335bb.png": "/meikafreckelton.github.io/static/media/dotdev.2e2335bb.png",
+    "static/media/midnight-2.aa4882ca.png": "/meikafreckelton.github.io/static/media/midnight-2.aa4882ca.png",
+    "static/media/petplace.1af1d857.png": "/meikafreckelton.github.io/static/media/petplace.1af1d857.png",
+    "static/media/pong.4a65bdcc.png": "/meikafreckelton.github.io/static/media/pong.4a65bdcc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.279234bc.js",
+    "static/js/2.5023d94b.chunk.js",
+    "static/css/main.363c5463.chunk.css",
+    "static/js/main.5da468ec.chunk.js"
+  ]
+}
