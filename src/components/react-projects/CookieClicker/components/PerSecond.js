@@ -5,7 +5,6 @@ const PerSecond = () => {
     const {store, dispatch} = useGlobalState()
     const {cookieClicks, autoIncrease} = store
     const [error, setError] = useState("")
-    const [disabled, setDisabled] = useState(true)
 
 
     useEffect(() => {

@@ -6,10 +6,7 @@ import Nav from './Navbar'
 
 
 const AddTwoot = ({history, nextId, addTwoot}) => {
-    const divStyles = {
-        // width: "100%",
-        
-    }
+    
     const inputStyles = {
         width: "100%",
         margin: ".5em"
@@ -49,10 +46,8 @@ const AddTwoot = ({history, nextId, addTwoot}) => {
             modified_date: new Date(),
             content: formState.content
         }
-        // console.log(newTwoot)
         addTwoot(newTwoot)
         history.push(`/tweeter/twoot/${nextId}`)
-        // console.log(newTwoot)
     }
     console.log(formState)
 

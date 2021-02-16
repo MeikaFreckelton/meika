@@ -1,12 +1,10 @@
-import React, { useState } from 'react' 
+import React from 'react' 
 import { Link } from 'react-router-dom'
 
 const Nav = ({nav}) => {
 
-    const [isClicked, setClicked] = useState(false)
 
     const toggleNav = () => {
-        // (isClicked === false) ? (setClicked(true)) : (setClicked(false))
         const nav = document.querySelector('.nav')
         if (nav.style.display === "none" ){
             nav.style.display = "flex"
@@ -16,7 +14,6 @@ const Nav = ({nav}) => {
 
     }
 
-    // let classToggle = isClicked ? "openNav" : "closedNav"
 
 
     
@@ -34,7 +31,6 @@ const Nav = ({nav}) => {
                 }
                 <div></div>
                 <div className="navItem icon">
-                    {/* <i class="far fa-eye" onClick={toggleNav}></i> */}
                     <i class="fas fa-hamburger" onClick={toggleNav}></i>
                 </div>
             </div>
@@ -55,19 +51,6 @@ const Nav = ({nav}) => {
     
     
 
-    // return (
-    //     <div>
-    //         <div id="nav">
-    //             <div id="test">
-    //                 hello
-    //             </div>
-    //             <div>
-    //                 world
-    //             </div>
-    //         </div>
-
-    //     </div>
-    // )
 }
 
 export default Nav
