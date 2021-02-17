@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Router, Route, Switch  } from 'react-router-dom'
+import React from 'react'
+import { BrowserRouter, Route, Switch  } from 'react-router-dom'
 
 // import Nav from './Nav'
 
@@ -18,11 +18,7 @@ import MovieList from './components/react-projects/MovieList'
 import ToDoList from './components/react-projects/ToDoList'
 import BillAndTip from './components/react-projects/BillAndTip'
 
-import AddTwoot from './components/react-projects/Tweeter/AddTwoot'
-import EditTwoot from './components/react-projects/Tweeter/EditTwoot'
-import Twoot from './components/react-projects/Tweeter/Twoot'
-import Twoots from './components/react-projects/Tweeter/Twoots'
-import blogData from './data/post_data'
+
 
 
 
@@ -35,35 +31,7 @@ import './styles/Desktop.css'
 
 const App = () => {
 
-  const [twoots, setTwoots] = useState([])
-
-  useEffect(() => {
-    setTwoots(blogData)
-  }, [])
-
-  const addTwoot = (twoot) => {
-    setTwoots([...twoots, twoot])
-  }
-
-  const nextId = () => {
-    return twoots.reduce((acc, cur) => acc._id > cur._id ? acc : cur, {_id: 0 })._id + 1
-  }
-
-  const getTwootFromId = (id) => {
-    return twoots.find((t) => t._id === parseInt(id))
-
-  }
-
-  const updateTwoot = (inTwoot) => {
-    const updatedTwoots = twoots.map((t) => (t._id === inTwoot._id) ? inTwoot : t)
-    setTwoots(updatedTwoots)
-  }
-
-  const deleteTwoot = (id) => {
-    const updatedTwoots = twoots.filter((t) => t._id !== parseInt(id))
-    setTwoots(updatedTwoots)
-  }
-
+ 
 
 
 
@@ -72,27 +40,12 @@ const App = () => {
 
   return (
     <div>
-      <Router>
+      <BrowserRouter>
 
 
         <Switch>
 
-          <Route exact path="/projects/react/tweeter/twoot/new">
-            <AddTwoot addTwoot={addTwoot} nextId={nextId()}/>
-          </Route>
-
-          <Route exact path="/projects/react/tweeter/twoot/edit/:id" >
-            <EditTwoot updateTwoot={updateTwoot} getTwoot={getTwootFromId}  />
-
-          </Route>
-
-          <Route exact path="/projects/react/tweeter/twoot/:id">
-            <Twoot getTwoot={getTwootFromId} showControls deleteTwoot={deleteTwoot} type="single"/>
-          </Route>
-
-          <Route exact path="/projects/react/tweeter">
-            <Twoots  twootsData={twoots} />
-          </Route>
+          
 
           <Route exact path="/projects/react/BillAndTip">
             <BillAndTip />
@@ -184,7 +137,7 @@ const App = () => {
           <Route exact path="/" component={Home} /> */}
         </Switch>
       
-      </Router>
+      </BrowserRouter>
     </div>
   )
 }

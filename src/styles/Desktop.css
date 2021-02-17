@@ -37,6 +37,38 @@
   .col-12 {
     width: 100%;
   }
+  #navbarA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #navbarA .topBar {
+    padding: 3%;
+  }
+  #navbarA .topBar .icon {
+    display: none;
+  }
+  #navbarA .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 0;
+    background-color: #fff;
+    padding: 3%;
+  }
   #homePage .typewriter {
     margin: 10% 3% 0;
   }
@@ -65,6 +97,8 @@
   }
   .aboutPage .logoHeading {
     padding-bottom: 5%;
+  }
+  .aboutPage .logoHeading a {
     font-size: 5vw;
   }
   .aboutPage .aboutTopSection {
@@ -184,6 +218,9 @@
   }
   .aboutPage .learningPath .timelineWrapper .timeline .timelineItem p {
     font-size: 1rem;
+  }
+  .aboutPage .skillsSection .skillsIcons img {
+    width: 12.5%;
   }
   .heading {
     font-size: 5vw;

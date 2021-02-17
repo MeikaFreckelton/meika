@@ -42,7 +42,6 @@ const ReactNav = () => {
                     <Link to="/projects/react/happyMessage" className="liStyles"><li>Happy message</li></Link>
                     <Link to="/projects/react/businessCard" className="liStyles"><li>Business Card</li></Link>
                     <Link to="/projects/react/cookieClicker" className="liStyles"><li>Cookie Clicker</li></Link>
-                    <Link to="/projects/react/tweeter" className="liStyles"><li>Tweeter</li></Link>
                     <Link to="/projects/react/todolist" className="liStyles"><li>To Do List</li></Link>
                     <Link to="/projects/react/billAndTip" className="liStyles"><li>Bill and Tip</li></Link>
                     <Link to="/projects/react/MovieList" className="liStyles" ><li>Movie List</li></Link>

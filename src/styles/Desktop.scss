@@ -15,6 +15,35 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
+    #navbarA{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+
+
+        .topBar{
+            padding: 3%;
+
+
+            .icon{
+                display: none;
+            }
+        }
+
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 0;
+            background-color: #fff;
+            padding: 3%;
+            
+
+        }
+    }
+
     #homePage{
 
         .typewriter{
@@ -55,7 +84,11 @@
     .aboutPage{
         .logoHeading{
             padding-bottom: 5%;
+
+            a{
             font-size: 5vw;
+
+            }
         }
 
         .aboutTopSection{
@@ -159,6 +192,18 @@
                         }
                     }
 
+                }
+
+            }
+        }
+        .skillsSection{
+
+
+            .skillsIcons{
+
+
+                img{
+                    width: 12.5%;
                 }
             }
         }
