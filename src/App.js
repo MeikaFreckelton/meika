@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Router, Route, Switch  } from 'react-router-dom'
 
 // import Nav from './Nav'
 
@@ -67,22 +67,108 @@ const App = () => {
 
 
 
-
+  // const params = 
+  
 
   return (
     <div>
-      <BrowserRouter>
+      <Router>
 
 
         <Switch>
 
-          <Route exact path="/projects/react/tweeter/twoot/new" render={(props) => <AddTwoot {...props} addTwoot={addTwoot} nextId={nextId()}/>} />
-          <Route exact path="/projects/react/tweeter/twoot/edit/:id" render={(props) => <EditTwoot {...props} updateTwoot={updateTwoot} twoot={ getTwootFromId(props.match.params.id)}  />} />
-          <Route exact path="/projects/react/tweeter/twoot/:id" render={(props) => <Twoot {...props} twoot={getTwootFromId(props.match.params.id)} showControls deleteTwoot={deleteTwoot} type="single"/>} />
-          <Route exact path="/projects/react/tweeter" render={(props) => <Twoots {...props} twootsData={twoots} />} />
+          <Route exact path="/projects/react/tweeter/twoot/new">
+            <AddTwoot addTwoot={addTwoot} nextId={nextId()}/>
+          </Route>
+
+          <Route exact path="/projects/react/tweeter/twoot/edit/:id" >
+            <EditTwoot updateTwoot={updateTwoot} getTwoot={getTwootFromId}  />
+
+          </Route>
+
+          <Route exact path="/projects/react/tweeter/twoot/:id">
+            <Twoot getTwoot={getTwootFromId} showControls deleteTwoot={deleteTwoot} type="single"/>
+          </Route>
+
+          <Route exact path="/projects/react/tweeter">
+            <Twoots  twootsData={twoots} />
+          </Route>
+
+          <Route exact path="/projects/react/BillAndTip">
+            <BillAndTip />
+          </Route>
+
+          <Route exact path="/projects/react/todolist">
+            <ToDoList />
+          </Route>
+
+          <Route path="/projects/react/cookieClicker" >
+            <CookieClicker />
+          </Route>
+
+          <Route path="/projects/react/yellingGreeter">
+            <YellingGreeter />
+          </Route>
+
+          <Route path="/projects/react/happyMessage" >
+            <HappyMessage />
+          </Route>
+
+          <Route path="/projects/react/businessCard" >
+            <BusinessCard />
+          </Route>
+
+          <Route path="/projects/react/movieList">
+            <MovieList />
+          </Route>
+
+          <Route exact path="/projects/react" >
+            <ReactHome />
+          </Route>
+
+          
+
+          <Route exact path="/projects/design">
+            <DesignProjects />
+          </Route>
+
+          <Route exact path="/contact" >
+            <Contact />
+          </Route>
+
+          <Route exact path="/projects" >
+            <Projects />
+
+          </Route>
+
+          <Route exact path="/about" >
+            <About />
+          </Route>
+
+          <Route exact path="/" >
+            <Home />            
+          </Route>
 
 
-          <Route exact path="/projects/react/BillAndTip" component={BillAndTip} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+          {/* <Route exact path="/projects/react/tweeter/twoot/edit/:id" render={(props) => <EditTwoot {...props} updateTwoot={updateTwoot} twoot={ getTwootFromId(props.match.params.id)}  />} /> */}
+          {/* <Route exact path="/projects/react/tweeter/twoot/:id" render={(props) => <Twoot {...props} twoot={getTwootFromId(props.match.params.id)} showControls deleteTwoot={deleteTwoot} type="single"/>} /> */}
+          {/* <Route exact path="/projects/react/tweeter" render={(props) => <Twoots {...props} twootsData={twoots} />} /> */}
+
+
+          {/* <Route exact path="/projects/react/BillAndTip" component={BillAndTip} />
           <Route exact path="/projects/react/todolist" component={ToDoList} />
           <Route path="/projects/react/cookieClicker" component={CookieClicker} />
           <Route path="/projects/react/yellingGreeter" component={YellingGreeter} />
@@ -95,10 +181,10 @@ const App = () => {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Home} /> */}
         </Switch>
       
-      </BrowserRouter>
+      </Router>
     </div>
   )
 }

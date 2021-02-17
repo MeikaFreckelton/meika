@@ -5,7 +5,7 @@ import Nav from './Navbar'
 // Display the one Twoot  - Remember to allow the passing of an id here
 
 
-const Twoot = ({ history, twoot, deleteTwoot, showControls, type }) => {
+const Twoot = ({ history, getTwoot, deleteTwoot, showControls, type }) => {
     const lightHeartStyles = {
         fontSize: "1rem"
     }

@@ -1,10 +1,13 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useParams } from 'react'
 import ReactNav from './../ReactNav'
 import Nav from './Navbar'
 
 // Edit the Twoot - Remember to allow the passing of an id here
 
-const EditTwoot = ({history, updateTwoot, twoot, }) => {
+const EditTwoot = ({history, updateTwoot, getTwoot, match}) => {
+    const params = useParams()
+    const twoot = getTwoot(params.id)
+    console.log(twoot)
 
     const [formState, setFormState] = useState({})
 
