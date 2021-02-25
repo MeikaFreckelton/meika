@@ -21,7 +21,7 @@ const YellingGreeter = (props) => {
         <div>
             <ReactNav />
             
-            <div className="heading">
+            <div className="heading react-heading">
                 <h1>Enter a message below and have it yelled back at you </h1>
             </div>
 

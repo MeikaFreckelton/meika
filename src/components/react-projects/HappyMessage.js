@@ -28,7 +28,7 @@ const HappyMessage = () => {
         <div>
             <ReactNav />
 
-            <div className="heading">
+            <div className="heading react-heading">
                 <h1>Click to receive a random happy message</h1>
             </div>
             

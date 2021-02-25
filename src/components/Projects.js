@@ -31,7 +31,7 @@ const Projects = () => {
             languages: ["Ruby"] },
         
         {name: "Halloween Pong", image: pong, 
-            link: "https://hackathon-halloween-pong.herokuapp.com/", 
+            link: "c", 
             description: "A recreation of the classic game, Pong made during a hackathon.", 
             languages: ["JavaScript", "Express"] },
         

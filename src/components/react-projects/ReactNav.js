@@ -36,8 +36,8 @@ const ReactNav = () => {
                 <ul className="ulStyles">
                 
                 
-                    <Link to="/projects" className="liStyles"><li>Back to Projects</li></Link>
-                    <Link to="/projects/react" className="liStyles"><li>Home</li></Link>
+                    <Link to="/projects" className="liStyles underlined"><li>Back to Projects</li></Link>
+                    <Link to="/projects/react" className="liStyles underlined"><li>Home</li></Link>
                     <Link to="/projects/react/yellingGreeter" className="liStyles"><li>Yelling Greeter</li></Link>
                     <Link to="/projects/react/happyMessage" className="liStyles"><li>Happy message</li></Link>
                     <Link to="/projects/react/businessCard" className="liStyles"><li>Business Card</li></Link>

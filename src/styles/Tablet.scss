@@ -145,7 +145,7 @@
         .skillsSection{
 
             .skillsIcons{
-                img{
+                .tooltip{
                     width: 18%;
                 }
             }
@@ -270,6 +270,18 @@
                         font-size: 3.5vw;
                     }
                 }
+            }
+        }
+    }
+
+    // react projects ----------------------------------
+    .wrapperStyles{
+
+        .heading{
+
+            h1{
+                font-size: 8vw;
+
             }
         }
     }

@@ -202,7 +202,7 @@
             .skillsIcons{
 
 
-                img{
+                .tooltip{
                     width: 12.5%;
                 }
             }
@@ -212,6 +212,9 @@
     .heading{
         font-size: 5vw;
         margin-bottom: 7.5%;
+        h1{
+            font-size: 5vw;
+        }
     }
 
     .projectsPage{
@@ -353,6 +356,67 @@
                         font-size: 0.8rem;
                     }
 
+                }
+            }
+        }
+    }
+
+
+    // react projects ------------------------------
+
+    .wrapperStyles{
+
+        .heading {
+           margin: 0 0 5%; 
+            
+            h1{
+                font-size: 5vw;
+            }
+        }
+
+    }
+
+    .react-heading{
+        max-width: 60vw;
+        margin: 3% auto 5%;
+
+        h1{
+            font-size: 3vw;
+        }
+    }
+
+    .reactNav{
+        padding: 2%;
+
+        .ulStyles{
+            padding: 3%;
+
+            .underlined{
+                text-decoration: underline;
+                text-decoration-color: $green;
+            }
+
+            .liStyles{
+                width: 25%;
+                flex-grow: 1;
+                &:hover{
+                    color: $green;
+                }
+
+            }
+        }
+    }
+
+    #businessCardWrapper{
+       
+
+        .cardAndForm{
+
+            .bForm{
+                width: 50vw;
+
+                label{
+                    min-width: 20vw;
                 }
             }
         }

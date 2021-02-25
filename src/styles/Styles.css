@@ -129,6 +129,11 @@
 
 .topBar .fa-eye, .topBar i {
   font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.topBar .fa-eye:hover, .topBar i:hover {
+  color: #2FCAB0;
 }
 
 .aboutPage {
@@ -142,6 +147,12 @@
   font-size: 12vw;
   font-weight: 800;
   padding-bottom: 10%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.aboutPage .logoHeading a:hover {
+  font-size: 4rem;
 }
 
 .aboutPage .imageAndDetails {
@@ -242,6 +253,15 @@
   width: 20vw;
 }
 
+.aboutPage .learningPath .timelineYears .yearItem:hover {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .aboutPage .learningPath .timelineYears .yearItem .line {
   min-width: 10vw;
   background-color: #2FCAB0;
@@ -252,6 +272,15 @@
 .aboutPage .learningPath .timelineYears .yearItem h2 {
   font-size: 1rem;
   padding-right: 14%;
+}
+
+.aboutPage .learningPath .timelineItem:hover {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .aboutPage .learningPath .timeline {
@@ -274,6 +303,24 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.aboutPage .learningPath .timeline .timelineItem:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.aboutPage .learningPath .timeline .timelineItem:hover .yearItem {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .aboutPage .learningPath .timeline .timelineItem h2 {
@@ -304,21 +351,43 @@
   margin-top: 5%;
 }
 
-.aboutPage .skillsSection .skillsIcons img {
-  padding: 2%;
-  width: 21%;
+.aboutPage .skillsSection .skillsIcons .tooltip {
+  width: 26%;
+  min-height: 10vh;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin-bottom: 10%;
   -webkit-transition: -webkit-transform .5s ease;
   transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
   transition: transform .5s ease, -webkit-transform .5s ease;
+  text-align: center;
 }
 
-.aboutPage .skillsSection .skillsIcons img:hover {
+.aboutPage .skillsSection .skillsIcons .tooltip:hover img {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   -webkit-filter: invert(73%) sepia(48%) saturate(602%) hue-rotate(115deg) brightness(85%) contrast(92%);
           filter: invert(73%) sepia(48%) saturate(602%) hue-rotate(115deg) brightness(85%) contrast(92%);
+}
+
+.aboutPage .skillsSection .skillsIcons img {
+  padding: 5%;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 .heading {
@@ -427,6 +496,17 @@
 
 .contactPage .socials a {
   color: #000;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.contactPage .socials a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-filter: invert(73%) sepia(48%) saturate(602%) hue-rotate(115deg) brightness(85%) contrast(92%);
+          filter: invert(73%) sepia(48%) saturate(602%) hue-rotate(115deg) brightness(85%) contrast(92%);
 }
 
 .contactPage #contact-form input[type=submit] {
@@ -435,6 +515,7 @@
   padding: 2% 5%;
   width: 100%;
   margin-bottom: 20%;
+  cursor: pointer;
 }
 
 .contactPage #contact-form input[type=submit]:hover {

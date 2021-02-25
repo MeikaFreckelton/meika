@@ -219,12 +219,15 @@
   .aboutPage .learningPath .timelineWrapper .timeline .timelineItem p {
     font-size: 1rem;
   }
-  .aboutPage .skillsSection .skillsIcons img {
+  .aboutPage .skillsSection .skillsIcons .tooltip {
     width: 12.5%;
   }
   .heading {
     font-size: 5vw;
     margin-bottom: 7.5%;
+  }
+  .heading h1 {
+    font-size: 5vw;
   }
   .projectsPage {
     max-width: 65%;
@@ -308,6 +311,45 @@
   }
   .designPage .graphicCards .portfolioCard .cardDetails .sub {
     font-size: 0.8rem;
+  }
+  .wrapperStyles .heading {
+    margin: 0 0 5%;
+  }
+  .wrapperStyles .heading h1 {
+    font-size: 5vw;
+  }
+  .react-heading {
+    max-width: 60vw;
+    margin: 3% auto 5%;
+  }
+  .react-heading h1 {
+    font-size: 3vw;
+  }
+  .reactNav {
+    padding: 2%;
+  }
+  .reactNav .ulStyles {
+    padding: 3%;
+  }
+  .reactNav .ulStyles .underlined {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #2FCAB0;
+            text-decoration-color: #2FCAB0;
+  }
+  .reactNav .ulStyles .liStyles {
+    width: 25%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .reactNav .ulStyles .liStyles:hover {
+    color: #2FCAB0;
+  }
+  #businessCardWrapper .cardAndForm .bForm {
+    width: 50vw;
+  }
+  #businessCardWrapper .cardAndForm .bForm label {
+    min-width: 20vw;
   }
 }
 /*# sourceMappingURL=Desktop.css.map */

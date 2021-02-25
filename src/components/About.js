@@ -58,7 +58,7 @@ const About = () => {
 
                         <div className="interests">
                             <h1>THINGS I LOVE</h1>
-                            <p>Strength training, my pets, reading, creating, yoga,  sudoku, video games, problem solving</p>
+                            <p> My pets, strength training, reading, yoga, sudoku, video games, problem solving</p>
 
                         </div>
                     </div>
@@ -104,21 +104,66 @@ const About = () => {
                 <div className="skillsSection">
                     <h1>SKILLS</h1>
                     <div className="skillsIcons">
-                    <img src={'icons/js.svg'} alt="js"></img>
-                        <img src={'icons/ruby.svg'} alt="ruby"></img>
-                        <img src={'icons/rails.svg'} alt="rails"></img>
-                        <img src={'icons/sass.svg'} alt="sass"></img>
-                        <img src={'icons/mongo.svg'} alt="mongoDB"></img>
-                        <img src={'icons/exp.svg'} alt="express"></img>
-                        <img src={'icons/react.svg'} alt="react"></img>
-                        <img src={'icons/node.svg'} alt="node"></img>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">JavaScript</p> */}
+                            <img src={'icons/js.svg'} alt="js"></img>
+                        </div>
                         
-                        <img src={'icons/html.svg'} alt="html"></img>
-                        <img src={'icons/css.svg'} alt="css"></img>
-                        <img src={'icons/github.svg'} alt="github"></img>
-                        <img src={'icons/illustrator.svg'} alt="illustrator"></img>
-                        <img src={'icons/indesign.svg'} alt="indesign"></img>
-                        <img src={'icons/photoshop.svg'} alt="photoshop"></img>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">Ruby</p> */}
+                            <img src={'icons/ruby.svg'} alt="ruby"></img>
+                        </div>
+
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">Ruby on Rails</p> */}
+                            <img src={'icons/rails.svg'} alt="rails"></img>
+                        </div>
+                    
+
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">Sass</p> */}
+                            <img src={'icons/sass.svg'} alt="sass"></img>
+                        </div>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">MongoDB</p> */}
+                            <img src={'icons/mongo.svg'} alt="mongoDB"></img>
+                        </div>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">Express</p> */}
+                            <img src={'icons/exp.svg'} alt="express"></img>
+                        </div>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">React</p> */}
+                            <img src={'icons/react.svg'} alt="react"></img>
+                        </div>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">Node.js</p> */}
+                            <img src={'icons/node.svg'} alt="node"></img>
+                        </div>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">HTML</p> */}
+                            <img src={'icons/html.svg'} alt="html"></img>
+                        </div>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">CSS</p> */}
+                            <img src={'icons/css.svg'} alt="css"></img>
+                        </div>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">Github</p> */}
+                            <img src={'icons/github.svg'} alt="github"></img>
+                        </div>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">Adobe Illustrator</p> */}
+                            <img src={'icons/illustrator.svg'} alt="illustrator"></img>
+                        </div>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">Adobe InDesign</p> */}
+                            <img src={'icons/indesign.svg'} alt="indesign"></img>
+                        </div>
+                        <div className="tooltip">
+                            {/* <p className="tooltiptext">Adobe Photoshop</p> */}
+                            <img src={'icons/photoshop.svg'} alt="photoshop"></img>
+                        </div>
 
 
                     </div>
