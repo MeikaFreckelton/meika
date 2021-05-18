@@ -28,10 +28,10 @@ const About = () => {
                                 <i class="fas fa-globe-asia"></i>
                                 <p> &nbsp; Sydney</p>
                             </div>
-                            <div>
+                            {/* <div>
                                 <i class="fas fa-calendar-day"></i>
                                 <p> &nbsp; 31/03/01</p>
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>
@@ -41,7 +41,7 @@ const About = () => {
                         <div className="aboutMe">
                             <h1>ABOUT ME</h1>
                             <p>
-                                I’m Meika Freckelton, a Junior Web Developer,
+                                I’m Meika Freckelton, a Junior Web Developer and Designer,
                                 with a passion for Front-End Development.<br /><br />
 
                                 After studying design for two years and then being
@@ -58,7 +58,7 @@ const About = () => {
 
                         <div className="interests">
                             <h1>THINGS I LOVE</h1>
-                            <p> My pets, strength training, reading, yoga, sudoku, video games, problem solving</p>
+                            <p> My pets, strength training, reading, yoga, pottery, video games, painting</p>
 
                         </div>
                     </div>
