@@ -19,7 +19,7 @@ const Projects = () => {
             languages: ["MongoDB", "Express", "React", "Node.js"] },
         {name: "Birthday Facts", image: birthday, 
             link: "https://birthday-facts.netlify.app/", 
-            description: "A fact generator created during a hackathon, in which the user enters in a date and may choose to generate either a birth, death or event that occured on that date. ", 
+            description: "A fact generator created during a hackathon, in which the user enters in a date and may choose to generate either a birth, death or event that occurred on that date. ", 
             languages: ["JavaScript"] },
         {name: "Pet Marketplace", image: petplace, 
             link: "https://petmarketplace.herokuapp.com/", 
