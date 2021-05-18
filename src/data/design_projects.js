@@ -22,7 +22,7 @@ const designData = [
         id: 3,
         imagePath: "/images/cards.jpg",
         imageAlt: "playing cards",
-        downloadLink: "/images/cards_meikaf.pdf",
+        downloadLink: "/images/cards_meika.pdf",
         title: "Playing Cards",
         subtitle: "Graphic Design work, 2019",
         text: "A set of playing cards loosely inspired by the classic tarot deck.",
