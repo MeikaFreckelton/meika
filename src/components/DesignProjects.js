@@ -70,7 +70,7 @@ const DesignProjects = () => {
                 <div>
                     <div className="equinox">
                         <h1>EQUINOX</h1>
-                        <p>Brand design for an airline of my creation, 'Equinox' and its mobile booking system.</p>
+                        <p>UX/UI design for an airline of my creation, 'Equinox' and its mobile booking system.</p>
                         <a href="https://invis.io/HYSC1JIVKTF" target="_blank" rel="noreferrer">View prototype</a>
                     </div>
 
