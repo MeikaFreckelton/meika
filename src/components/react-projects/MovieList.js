@@ -6,10 +6,10 @@ const MovieList = () => {
 
     const movies =[
         "Dazed and Confused",
-        "Trainspotting",
+        "The Breakfast Club",
         "Friday the 13th",
         "Amelie",
-        "Romper Stomper"
+        "Ferris Bueller's Day Off"
     ]
     const [movieList, setMovieList] = useState(movies)
     const [value, setValue] = useState("")
