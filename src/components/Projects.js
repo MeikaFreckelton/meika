@@ -11,7 +11,11 @@ import DesignProjects from './DesignProjects'
 
 const Projects = () => {
     console.log(birthday)
-    const [projs, setProjs] = useState("nil")
+    const [projs, setProjs] = useState({
+        name: "",
+        designClass: "asleep",
+        devClass: "asleep"
+    })
 
     const projects = [
         {name: "Dot Developer", image: dotdev, 
@@ -64,9 +68,23 @@ const Projects = () => {
 
     const toggleProjects = e => {
         // const val = e.target.className
-        e.preventDefault()
+
+        if ((projs.name === "design" && e.target.name === "dev") || (projs.name === "" && e.target.name === "dev") ){
+            setProjs({
+                name: e.target.name,
+                designClass: "asleep",
+                devClass: "active"
+            })
+        } else if ((projs.name === "dev" && e.target.name === "design") || (projs.name === "" && e.target.name === "design")){
+            setProjs({
+                name: e.target.name,
+                designClass: "active",
+                devClass: "asleep"
+            })
+        } 
+
+            
         
-        (e.target.name && e.target.name === "design") ? (setProjs("design")) : (setProjs("dev"))
     }
 
     return (
@@ -77,11 +95,11 @@ const Projects = () => {
                     PROJECTS
                 </div>
                 <div id="toggleProjects">
-                    <button className="toggleDesign" name="design" onClick={toggleProjects}>Design</button>
-                    <button className="toggleDev" name="dev" onClick={toggleProjects}>Development</button>
+                    <button className={projs.designClass} id="toggleDesign" name="design" onClick={toggleProjects}>Design</button>
+                    <button className={projs.devClass} id="toggleDev" name="dev" onClick={toggleProjects}>Development</button>
                 </div>
                 {
-                    projs && projs === "design" &&
+                    projs && projs.name === "design" &&
                     <div className="olderProjects">
                         {/* <h1>Design Work</h1> */}
                         <DesignProjects />
@@ -89,7 +107,7 @@ const Projects = () => {
                     </div>
                 }
                 {
-                    projs && projs === "dev" &&
+                    projs && projs.name === "dev" &&
                     <div>
                         <div className="reactProjects">
                             <Link to="/projects/react">React Projects</Link>

@@ -64,9 +64,7 @@ const DesignProjects = () => {
             {/* <Nav /> */}
 
             <div className="designPage">
-                <div className="heading">
-                    DESIGN PROJECTS
-                </div>
+                
                 <div>
                     <div className="equinox">
                         <h1>EQUINOX</h1>

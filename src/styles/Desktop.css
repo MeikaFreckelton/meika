@@ -235,6 +235,9 @@
     font-size: 5vw;
     margin-bottom: 7.5%;
   }
+  .projectsPage #toggleProjects .asleep, .projectsPage #toggleProjects .active {
+    font-size: 1.75rem;
+  }
   .projectsPage .projectGallery {
     margin-bottom: 5%;
   }

@@ -172,6 +172,13 @@
 
     .projectsPage{
 
+        #toggleProjects{
+
+            .asleep, .active{
+                font-size: 2.5rem;
+            }
+        }
+
         .projectGallery{
             display: flex;
             flex-direction: row;

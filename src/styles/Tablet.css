@@ -112,6 +112,9 @@
   .aboutPage .skillsSection .skillsIcons .tooltip {
     width: 18%;
   }
+  .projectsPage #toggleProjects .asleep, .projectsPage #toggleProjects .active {
+    font-size: 2.5rem;
+  }
   .projectsPage .projectGallery {
     display: -webkit-box;
     display: -ms-flexbox;
