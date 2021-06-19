@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom' 
 import Nav from './Nav'
 import birthday from '../images/project-images/birthday.png'
@@ -11,6 +11,7 @@ import DesignProjects from './DesignProjects'
 
 const Projects = () => {
     console.log(birthday)
+    const [projs, setProjs] = useState("nil")
 
     const projects = [
         {name: "Dot Developer", image: dotdev, 
@@ -61,6 +62,13 @@ const Projects = () => {
         )
     }
 
+    const toggleProjects = e => {
+        // const val = e.target.className
+        e.preventDefault()
+        
+        (e.target.name && e.target.name === "design") ? (setProjs("design")) : (setProjs("dev"))
+    }
+
     return (
         <div>
             <Nav />
@@ -68,24 +76,41 @@ const Projects = () => {
                 <div className="heading">
                     PROJECTS
                 </div>
-                <div className="reactProjects">
-                    <Link to="/projects/react">React Projects</Link>
+                <div id="toggleProjects">
+                    <button className="toggleDesign" name="design" onClick={toggleProjects}>Design</button>
+                    <button className="toggleDev" name="dev" onClick={toggleProjects}>Development</button>
                 </div>
-                <div className="projectGallery">
-                    {
-                        projects.map((proj, index) => {
-                            const { name, image, link, description, languages } = proj
-                            return displayProjects(name, image, link, description, languages )
-                        })
-                    }
+                {
+                    projs && projs === "design" &&
+                    <div className="olderProjects">
+                        {/* <h1>Design Work</h1> */}
+                        <DesignProjects />
 
+                    </div>
+                }
+                {
+                    projs && projs === "dev" &&
+                    <div>
+                        <div className="reactProjects">
+                            <Link to="/projects/react">React Projects</Link>
+                        </div>
+                        <div className="projectGallery">
+                            {
+                                projects.map((proj, index) => {
+                                    const { name, image, link, description, languages } = proj
+                                    return displayProjects(name, image, link, description, languages )
+                                })
+                            }
+
+                            
+                        </div>
+                    </div>
                     
-                </div>
-                <div className="olderProjects">
-                    {/* <h1>Design Work</h1> */}
-                    <DesignProjects />
+                }
 
-                </div>
+
+                
+                
             </div>
         </div>
     )
