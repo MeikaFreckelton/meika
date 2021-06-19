@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react' 
 import Nav from './Nav'
 import { Link } from 'react-router-dom'
-
+import me from '../images/IMG_6336.jpg'
 
 const About = () => {
 
@@ -22,7 +22,9 @@ const About = () => {
                 </div>
                 <div className="aboutTopSection">
                     <div className="imageAndDetails">
-                        <div className="profileImage"></div>
+                        <div className="profileImage">
+                            <img src={me} alt="me" id="profilePhoto"></img>
+                        </div>
                         <div className="details">
                             <div>
                                 <i class="fas fa-globe-asia"></i>
@@ -41,17 +43,17 @@ const About = () => {
                         <div className="aboutMe">
                             <h1>ABOUT ME</h1>
                             <p>
-                                I’m Meika Freckelton, a Junior Web Developer and Designer,
-                                with a passion for Front-End Development.<br /><br />
+                                I’m a Junior Web Developer and Designer,
+                                with a passion for web development, front-end development, design, creativity and problem solving.<br /><br />
 
-                                After studying design for two years and then being
-                                introduced to HTML and CSS I was intrigued and 
-                                needed to learn more.  <br /><br />
+                                After studying and loving design for two years, I decided to branch out and take a leap into tech. 
+                                <br /><br />
+                                 Now, having finished Coder Academy's Web Development Bootcamp, I'm eager to get my start in the tech and design industry and be able
+                                to put my skills to use and contribute to exciting projects.  <br /><br />
 
-                                After enrolling at Coder Academy I knew I had found 
-                                something with endless, exciting learning opportunities 
-                                and pathways to take!<br /><br /> Although I’ve only scratched the 
-                                surface of tech, I’m eager to learn more about what it has to offer!
+                                
+
+                               
                             </p>
 
                         </div>

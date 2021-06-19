@@ -31,7 +31,7 @@ const Nav = ({nav}) => {
                 }
                 <div></div>
                 <div className="navItem icon">
-                    <i class="fas fa-hamburger" onClick={toggleNav}></i>
+                    <i class="far fa-heart" onClick={toggleNav} id="heart"></i>
                 </div>
             </div>
 

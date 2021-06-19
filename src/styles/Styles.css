@@ -96,6 +96,14 @@
   font-size: 1.25rem;
 }
 
+.nav a:hover {
+  color: black;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .nav .navItem {
   padding: 3% 0;
 }
@@ -159,10 +167,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -173,21 +177,24 @@
 }
 
 .aboutPage .imageAndDetails .profileImage {
-  width: 40%;
-  padding-top: 40%;
+  padding: 5% 0;
+  width: 50%;
+}
+
+.aboutPage .imageAndDetails .profileImage #profilePhoto {
+  max-width: 100%;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.2);
+  height: auto;
 }
 
 .aboutPage .imageAndDetails .details {
-  width: 50%;
-  padding: 5%;
-  background-color: rgba(47, 202, 176, 0.65);
+  width: 45%;
+  padding: 3%;
 }
 
 .aboutPage .imageAndDetails .details div {
   padding: 5%;
-  color: #fff;
+  color: #2FCAB0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +202,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 4.25vw;
+  border-radius: 3px;
 }
 
 .aboutPage .imageAndDetails .details div i {
@@ -465,6 +479,12 @@
 .contactPage {
   width: 75%;
   margin: 0 auto;
+}
+
+.contactPage .contactSub {
+  text-align: center;
+  padding: 3% 0;
+  color: #2FCAB0;
 }
 
 .contactPage .success {

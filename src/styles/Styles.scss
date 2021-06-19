@@ -107,6 +107,11 @@
         color: $green;
         text-decoration: none;
         font-size: 1.25rem;
+        &:hover{
+            color: black;
+            transform: scale(2);
+            transition: 0.5s;
+        }
         
     }
     .navItem{
@@ -173,29 +178,40 @@
 
     .imageAndDetails{
         display: flex;
-        flex-direction: row-reverse;
+        // flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 10%;
 
 
         .profileImage{
-            width: 40%;
-            padding-top: 40%;
-            border-radius: 50%;
-            background-color: rgba(0, 0, 0, 0.2);
+            padding: 5% 0;
+            width: 50%;
+            
+            #profilePhoto{
+                max-width: 100%;
+                border-radius: 50%;
+                // width: 60%;
+                height: auto;
+
+            }
         }
 
         .details{
-            width: 50%;
-            padding: 5%;
-            background-color: rgba(47, 202, 176, 0.65);
+            width: 45%;
+            padding: 3%;
+            // background-color: rgba(47, 202, 176, 0.65);
             div{
                 padding: 5%;
-                color: #fff;
+                color: $green;
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
+                align-items: center;
                 font-size: 4.25vw;
+                // border: 2px solid $green;
+                border-radius: 3px;
+                
 
                 
 
@@ -487,6 +503,11 @@
     width: 75%;
     margin: 0 auto;
 
+    .contactSub{
+        text-align: center;
+        padding: 3% 0;
+        color: $green;
+    }
     .success{
         color: #70ff83;
         text-align: center;

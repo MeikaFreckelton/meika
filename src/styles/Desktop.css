@@ -50,7 +50,7 @@
             justify-content: space-between;
   }
   #navbarA .topBar {
-    padding: 3%;
+    padding: 2%;
   }
   #navbarA .topBar .icon {
     display: none;
@@ -67,7 +67,7 @@
         justify-content: space-around;
     margin-left: 0;
     background-color: #fff;
-    padding: 3%;
+    padding: 1%;
   }
   #homePage .typewriter {
     margin: 10% 3% 0;
@@ -126,7 +126,6 @@
   .aboutPage .aboutTopSection .imageAndDetails .profileImage {
     margin-bottom: 10%;
     width: 100%;
-    padding-top: 100%;
   }
   .aboutPage .aboutTopSection .imageAndDetails .details {
     width: 100%;
@@ -223,7 +222,7 @@
     width: 12.5%;
   }
   .heading {
-    font-size: 5vw;
+    font-size: 4vw;
     margin-bottom: 7.5%;
   }
   .heading h1 {
@@ -260,6 +259,12 @@
   }
   .contactPage #contact-form .formFields input[type=text], .contactPage #contact-form .formFields textarea {
     font-size: 1rem;
+  }
+  .contactPage .socials {
+    font-size: 3rem;
+  }
+  .contactPage .contactSub {
+    font-size: 2vw;
   }
   .designPage .heading {
     margin-top: 0;

@@ -50,6 +50,9 @@ const Contact = () => {
                     </a>
 
                 </div>
+                <div className="contactSub">
+                    <p>Feel free to reach out to me with any questions or enquiries :)</p>
+                </div>
                 {
                     completion && 
                     <h1 className={completion.class}>{completion.text}</h1>

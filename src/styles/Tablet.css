@@ -52,20 +52,24 @@
   #homePage .homeBottom .underline-transition {
     background-size: 20% 0.20em;
   }
+  #navbarA .topBar .icon #heart {
+    font-size: 3rem;
+  }
   .aboutPage .logoHeading {
-    font-size: 7.72vw;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+  }
+  .aboutPage .logoHeading a {
+    font-size: 10vw;
   }
   .aboutPage .aboutTopSection .imageAndDetails {
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
   .aboutPage .aboutTopSection .imageAndDetails .details {
     width: 40%;
     background-color: transparent;
-    border: 3px solid #2FCAB0;
   }
   .aboutPage .aboutTopSection .imageAndDetails .details div {
-    font-size: 3vw;
+    font-size: 2rem;
     color: #2FCAB0;
     font-weight: 600;
   }
@@ -142,6 +146,9 @@
   }
   .contactPage #contact-form .formFields input[type=text], .contactPage #contact-form .formFields textarea {
     font-size: 1.75rem;
+  }
+  .contactPage .contactSub {
+    font-size: 3vw;
   }
   .designPage h2 {
     font-size: 3.75vw;
