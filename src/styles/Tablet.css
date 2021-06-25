@@ -176,10 +176,10 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .designPage .equinoxCards .designCard {
+  .designPage .equinoxCards .designCard, .designPage .equinoxCards .graphicCards {
     width: 47%;
   }
-  .designPage .equinoxCards .designCard a {
+  .designPage .equinoxCards .designCard a, .designPage .equinoxCards .graphicCards a {
     margin-left: 2%;
   }
   .designPage .designCard .designDetails {

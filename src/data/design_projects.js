@@ -97,6 +97,21 @@ const equinox = [
 ]
 
 
+const mask = [
+    {
+        imagePath: "/images/mask-1.png"
+    },
+    {
+        imagePath: "/images/mask-2.png"
+    },
+    {
+        imagePath: "/images/mask-3.png"
+    },
+]
+
+
+
+
 
 
 const designData = [
@@ -193,6 +208,39 @@ const designData = [
     },
 ]
 
+const fashionData = [
+    {
+        imagePath: "/images/timeline.png",
+        imageAlt: "timeline",
+        downloadLink: "/images/timeline.png",
+        title: "40s Fashion Timeline",
+        subtitle: "Fashion work, 2018",
+        text: "A poster detailing the basic timeline of fashion during the 1940s.",
+        car: false
+
+    },
+    {
+        imagePath: "/images/daydream-nation.png",
+        imageAlt: "type poster",
+        downloadLink: "/images/pdf/daydream-nation.pdf",
+        title: "Fashion brand Booklet",
+        subtitle: "Fashion work, 2018",
+        text: "A booklet I created during my fashion studies of a brand of my own creation, named, 'Daydream Nation'.",
+        car: false,
+    },
+    {
+        imagePath: "/images/mask-1.png",
+        imageAlt: "masks",
+        downloadLink: "/images/pdf/masks.pdf",
+        title: "Mask Rendering",
+        subtitle: "Fashion work, 2018",
+        text: "A series of different renderings of a chosen mask.",
+        car: true,
+        carName: mask
+    },
+
+]
+
 
 
 const carouselData = {
@@ -206,4 +254,4 @@ const carouselData = {
 
 
 
-export {designData, carouselData}
+export {designData, carouselData, fashionData}

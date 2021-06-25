@@ -1,5 +1,5 @@
 import React from 'react'
-import { designData, carouselData } from '../data/design_projects'
+import { designData, carouselData, fashionData } from '../data/design_projects'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -13,31 +13,10 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const DesignProjects = () => {
 
-    const fashionData = [
-        {
-            imagePath: "/images/timeline.png",
-            imageAlt: "timeline",
-            downloadLink: "/images/timeline.png",
-            title: "40s Fashion Timeline",
-            subtitle: "Fashion work, 2018",
-            text: "A poster detailing the basic timeline of fashion during the 1940s.",
-            car: false
+    
+    // console.log(fashionData)
 
-        },
-        {
-            imagePath: "/images/daydream-nation.png",
-            imageAlt: "type poster",
-            downloadLink: "/images/pdf/daydream-nation.pdf",
-            title: "Fashion brand Booklet",
-            subtitle: "Fashion work, 2018",
-            text: "A booklet I created during my fashion studies of a brand of my own creation, named, 'Daydream Nation'.",
-            car: false
-        },
-        
-    ]
-    console.log(fashionData)
-
-    const {brochure, photoshop, equinox } = carouselData
+    // const {brochure, photoshop, equinox } = carouselData
 
     const displayCarousel = (data) => {
         const { imagePath} = data
@@ -63,7 +42,7 @@ const DesignProjects = () => {
                 {
                     car && car === true && 
                     <div className="portfolioCard col-3">
-                        <Carousel>
+                        <Carousel autoPlay>
                             {
                                 carName && carName.map(x => {
                                     return displayCarousel(x)
@@ -139,11 +118,27 @@ const DesignProjects = () => {
 
     return (
         <div>
-            {/* <Nav /> */}
 
             <div className="designPage">
                 
-                {/* <div>
+                
+
+                
+
+
+                
+                <div className="graphicWrapper">
+                    <h1>GRAPHIC DESIGN</h1>
+                    <div className="graphicCards">
+                        {
+                            designData.map((x) => {
+                                return displayGraphic(x)
+                            })
+                        }
+
+                    </div>
+                </div>
+                <div>
                     <div className="equinox">
                         <h1>EQUINOX</h1>
                         <p>UX/UI design for an airline of my creation, 'Equinox' and its mobile booking system.</p>
@@ -153,6 +148,7 @@ const DesignProjects = () => {
                     <div className="equinoxCards">
                         <div className="designCard">
                             <img src={"/images/equinox-brief.png"} alt="equinox brief"></img>
+                            
                             <div className="designDetails">
                                 <div className="designTitle">
                                     <h2>FORMAL BRIEF</h2>
@@ -188,33 +184,6 @@ const DesignProjects = () => {
 
                     </div>
 
-                </div> */}
-
-                {/* <div>
-                    <Carousel>
-                        {
-                            brochure && brochure.map(x => {
-                                return displayCarousel(x)
-                            })
-
-
-                        }
-                    </Carousel>
-
-                </div> */}
-
-
-                
-                <div className="graphicWrapper">
-                    <h1>GRAPHIC DESIGN</h1>
-                    <div className="graphicCards">
-                        {
-                            designData.map((x) => {
-                                return displayGraphic(x)
-                            })
-                        }
-
-                    </div>
                 </div>
                 <div>
                     <h1>FASHION</h1>
