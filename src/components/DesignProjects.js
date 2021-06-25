@@ -20,7 +20,9 @@ const DesignProjects = () => {
             downloadLink: "/images/timeline.png",
             title: "40s Fashion Timeline",
             subtitle: "Fashion work, 2018",
-            text: "A poster detailing the basic timeline of fashion during the 1940s."
+            text: "A poster detailing the basic timeline of fashion during the 1940s.",
+            car: false
+
         },
         {
             imagePath: "/images/daydream-nation.png",
@@ -28,8 +30,10 @@ const DesignProjects = () => {
             downloadLink: "/images/pdf/daydream-nation.pdf",
             title: "Fashion brand Booklet",
             subtitle: "Fashion work, 2018",
-            text: "A booklet I created during my fashion studies of a brand of my own creation, named, 'Daydream Nation'."
+            text: "A booklet I created during my fashion studies of a brand of my own creation, named, 'Daydream Nation'.",
+            car: false
         },
+        
     ]
     console.log(fashionData)
 
