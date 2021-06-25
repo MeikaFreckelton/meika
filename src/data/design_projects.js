@@ -1,3 +1,104 @@
+
+const brochure = [
+    {
+        imagePath: "/images/brochureImages/b1.png"
+    },
+    {
+        imagePath: "/images/brochureImages/b2.png"
+    },
+    {
+        imagePath: "/images/brochureImages/b3.png"
+    },
+    {
+        imagePath: "/images/brochureImages/b4.png"
+    },
+    {
+        imagePath: "/images/brochureImages/b5.png"
+    },
+    {
+        imagePath: "/images/brochureImages/b6.png"
+    },
+    {
+        imagePath: "/images/brochureImages/b7.png"
+    },
+    {
+        imagePath: "/images/brochureImages/b8.png"
+    },
+
+]
+
+const photoshop = [
+    {
+        imagePath: "/images/photoshopImages/p1.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p2.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p3.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p4.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p5.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p6.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p7.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p8.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p9.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p10.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p11.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p12.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p13.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p14.png"
+    },
+    {
+        imagePath: "/images/photoshopImages/p15.png"
+    },
+]
+
+const equinox = [
+    {
+        imagePath: "/images/equinoxBriefImages/e1.png"
+    },
+    {
+        imagePath: "/images/equinoxBriefImages/e2.png"
+    },
+    {
+        imagePath: "/images/equinoxBriefImages/e3.png"
+    },
+    {
+        imagePath: "/images/equinoxBriefImages/e4.png"
+    },
+    {
+        imagePath: "/images/equinoxBriefImages/e5.png"
+    },
+    {
+        imagePath: "/images/equinoxBriefImages/e6.png"
+    },
+]
+
+
+
+
 const designData = [
     {
         id: 1,
@@ -7,6 +108,8 @@ const designData = [
         title: "Travel Brochure",
         subtitle: "Graphic Design work, 2019",
         text: "A travel brochure for Spain.",
+        car: true,
+        carName: brochure
     },
     {
         id: 2,
@@ -16,6 +119,7 @@ const designData = [
         title: "Music Poster",
         subtitle: "Graphic Design work, 2019",
         text: "A band tour poster with custom lettering, inspired by psychedelic rock posters from the 1970s.",
+        car: false
     },
     
     {
@@ -26,6 +130,8 @@ const designData = [
         title: "Playing Cards",
         subtitle: "Graphic Design work, 2019",
         text: "A set of playing cards loosely inspired by the classic tarot deck.",
+        car: false
+
     },
     {
         id: 4,
@@ -35,6 +141,8 @@ const designData = [
         title: "Movie Poster",
         subtitle: "Graphic Design work, 2019",
         text: "A movie poster design for the movie, 'The Fifth Element'.",
+        car: false
+
     },
     {
         id: 5,
@@ -44,6 +152,9 @@ const designData = [
         title: "Graphic Designer Infographic",
         subtitle: "Graphic Design work, 2019",
         text: "An infographic detailing ten ways to be a better graphic designer.",
+        car: false,
+        
+
     },
     {
         id: 6,
@@ -53,6 +164,9 @@ const designData = [
         title: "Photoshop Portfolio",
         subtitle: "Graphic Design work, 2019",
         text: "A portfolio of photoshop effect work.",
+        car: true,
+        carName: photoshop
+
     },
     {
         id: 7,
@@ -62,6 +176,8 @@ const designData = [
         title: "Typography Poster",
         subtitle: "Graphic Design work, 2019",
         text: "A poster detailing different aspects of typography.",
+        car: false
+
     },
     {
         id: 8,
@@ -71,10 +187,23 @@ const designData = [
         title: "Lightbulb Packaging Design",
         subtitle: "Graphic Design work, 2019",
         text: "Design for a lightbulb and its box, with a lightbulb created using illustrator 3D techniques.",
+        car: false
+        
+
     },
 ]
 
 
 
+const carouselData = {
+    brochure: brochure,
+    equinox: equinox, 
+    photoshop: photoshop
+}
+    
 
-export default designData
+
+
+
+
+export {designData, carouselData}

@@ -1,5 +1,8 @@
 import React from 'react'
-import designData from '../data/design_projects'
+import { designData, carouselData } from '../data/design_projects'
+import { Carousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 
 
@@ -30,29 +33,100 @@ const DesignProjects = () => {
     ]
     console.log(fashionData)
 
+    const {brochure, photoshop, equinox } = carouselData
+
+    const displayCarousel = (data) => {
+        const { imagePath} = data
+
+        return (
+            <div>
+                <img alt="" src={imagePath}></img>
+                {/* <p className="legend">{title}</p> */}
+            </div>
+        )
+    }
         
     
 
 
     const displayGraphic = (data) => {
-        const { imagePath, imageAlt, downloadLink, title, subtitle, text } = data
+        const { imagePath, imageAlt, downloadLink, title, subtitle, text, car, carName } = data
 
         return (
-            <div className="portfolioCard col-3">
-                <img src={imagePath} alt={imageAlt} ></img>
-                <div className="cardDetails" key={data.id && data.id}>
-                    <div className="cardTitle">
-                        <h2>{title && title.toUpperCase()}</h2>
-                        <a href={downloadLink} target="_blank" rel="noreferrer" download><i class="fas fa-download"></i></a>
-                    </div>
-                    <p>{text}</p>
-                    <p className="sub">{subtitle}</p>
+            <div>
 
+
+                {
+                    car && car === true && 
+                    <div className="portfolioCard col-3">
+                        <Carousel>
+                            {
+                                carName && carName.map(x => {
+                                    return displayCarousel(x)
+                                })
+
+
+                            }
+                        </Carousel>
+                        <div className="cardDetails" key={data.id && data.id}>
+                            <div className="cardTitle">
+                                <h2>{title && title.toUpperCase()}</h2>
+                                <a href={downloadLink} target="_blank" rel="noreferrer" download><i class="fas fa-download"></i></a>
+                            </div>
+                            <p>{text}</p>
+                            <p className="sub">{subtitle}</p>
+
+                            
+                        </div>
+                        
+
+
+                    </div>
                     
-                </div>
+
+                }
+                {
+                    car === false &&
+                    <div className="portfolioCard col-3">
+                
+                        <img src={imagePath} alt={imageAlt} ></img>
+                        <div className="cardDetails" key={data.id && data.id}>
+                            <div className="cardTitle">
+                                <h2>{title && title.toUpperCase()}</h2>
+                                <a href={downloadLink} target="_blank" rel="noreferrer" download><i class="fas fa-download"></i></a>
+                            </div>
+                            <p>{text}</p>
+                            <p className="sub">{subtitle}</p>
+
+                            
+                        </div>
+                        
+
+
+                    </div>
+
+                }
+                
 
 
             </div>
+            // <div className="portfolioCard col-3">
+                
+            //     <img src={imagePath} alt={imageAlt} ></img>
+            //     <div className="cardDetails" key={data.id && data.id}>
+            //         <div className="cardTitle">
+            //             <h2>{title && title.toUpperCase()}</h2>
+            //             <a href={downloadLink} target="_blank" rel="noreferrer" download><i class="fas fa-download"></i></a>
+            //         </div>
+            //         <p>{text}</p>
+            //         <p className="sub">{subtitle}</p>
+
+                    
+            //     </div>
+                
+
+
+            //  </div>
         )
     }
 
@@ -65,7 +139,7 @@ const DesignProjects = () => {
 
             <div className="designPage">
                 
-                <div>
+                {/* <div>
                     <div className="equinox">
                         <h1>EQUINOX</h1>
                         <p>UX/UI design for an airline of my creation, 'Equinox' and its mobile booking system.</p>
@@ -110,7 +184,23 @@ const DesignProjects = () => {
 
                     </div>
 
-                </div>
+                </div> */}
+
+                {/* <div>
+                    <Carousel>
+                        {
+                            brochure && brochure.map(x => {
+                                return displayCarousel(x)
+                            })
+
+
+                        }
+                    </Carousel>
+
+                </div> */}
+
+
+                
                 <div className="graphicWrapper">
                     <h1>GRAPHIC DESIGN</h1>
                     <div className="graphicCards">
