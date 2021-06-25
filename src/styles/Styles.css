@@ -497,8 +497,6 @@
   height: 20vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: invert(75%);
-          filter: invert(75%);
 }
 
 .projectsPage .projectGallery .projectCard .cardInfo {
@@ -653,8 +651,6 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: invert(75%);
-          filter: invert(75%);
 }
 
 .designPage .designCard .designDetails {

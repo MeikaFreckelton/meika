@@ -9,6 +9,7 @@ import pong from '../images/project-images/pong.png'
 import DesignProjects from './DesignProjects'
 
 
+
 const Projects = () => {
     console.log(birthday)
     const [projs, setProjs] = useState({
@@ -22,7 +23,7 @@ const Projects = () => {
             link: "https://dotdeveloper.herokuapp.com/", 
             description: "A social media for developers to encourage networking.", 
             languages: ["MongoDB", "Express", "React", "Node.js"] },
-        {name: "Birthday Facts", image: birthday, 
+        {name: "Birthday Facts", image: "/images/bdayfacts.gif", 
             link: "https://birthday-facts.netlify.app/", 
             description: "A fact generator created during a hackathon, in which the user enters in a date and may choose to generate either a birth, death or event that occurred on that date. ", 
             languages: ["JavaScript"] },
