@@ -418,6 +418,24 @@
   margin: 0 auto;
 }
 
+.projectsPage .carousel .carousel-status {
+  color: #2FCAB0;
+  text-shadow: none;
+}
+
+.projectsPage .carousel .thumb.selected {
+  border: 3px solid #2FCAB0;
+}
+
+.projectsPage .carousel .control-dots .dot {
+  -webkit-box-shadow: 1px 1px 10px rgba(47, 202, 176, 0.8);
+          box-shadow: 1px 1px 10px rgba(47, 202, 176, 0.8);
+}
+
+.projectsPage .carousel .control-dots .dot.selected {
+  background-color: #2FCAB0;
+}
+
 .projectsPage #toggleProjects {
   display: -webkit-box;
   display: -ms-flexbox;

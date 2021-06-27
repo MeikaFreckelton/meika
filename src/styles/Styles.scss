@@ -428,6 +428,29 @@
     width: 75%;
     margin: 0 auto;
 
+    .carousel{
+
+        .carousel-status{
+            color: $green;
+            text-shadow: none;
+        }
+        .thumb.selected{
+
+            border: 3px solid $green;
+        }
+
+        .control-dots{
+
+            .dot{
+                box-shadow: 1px 1px 10px rgba(47, 202, 176, 0.80)
+
+            }
+            .dot.selected{
+                background-color: $green;
+            }
+        }
+    }
+
     #toggleProjects{
         display: flex;
         flex-direction: row;

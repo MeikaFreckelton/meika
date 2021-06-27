@@ -222,7 +222,7 @@
     width: 12.5%;
   }
   .heading {
-    font-size: 4vw;
+    font-size: 3vw;
     margin: 0;
   }
   .heading h1 {
@@ -266,6 +266,7 @@
   }
   .contactPage .socials {
     font-size: 3rem;
+    padding-top: 5%;
   }
   .contactPage .contactSub {
     font-size: 2vw;
