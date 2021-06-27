@@ -42,7 +42,7 @@ const DesignProjects = () => {
                 {
                     car && car === true && 
                     <div className="portfolioCard col-3">
-                        <Carousel autoPlay>
+                        <Carousel>
                             {
                                 carName && carName.map(x => {
                                     return displayCarousel(x)
