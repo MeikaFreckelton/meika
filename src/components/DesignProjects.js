@@ -1,5 +1,5 @@
 import React from 'react'
-import { designData, carouselData, fashionData } from '../data/design_projects'
+import { designData, fashionData } from '../data/design_projects'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
