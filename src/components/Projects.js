@@ -19,7 +19,7 @@ const Projects = () => {
     })
 
     const projects = [
-        {name: "Dot Developer", image: dotdev, 
+        {name: "Dot Developer", image: "/images/dotdev.gif", 
             link: "https://dotdeveloper.herokuapp.com/", 
             description: "A social media for developers to encourage networking.", 
             languages: ["MongoDB", "Express", "React", "Node.js"] },
@@ -27,16 +27,16 @@ const Projects = () => {
             link: "https://birthday-facts.netlify.app/", 
             description: "A fact generator created during a hackathon, in which the user enters in a date and may choose to generate either a birth, death or event that occurred on that date. ", 
             languages: ["JavaScript"] },
-        {name: "Pet Marketplace", image: petplace, 
+        {name: "Pet Marketplace", image: "/images/pets.gif", 
             link: "https://petmarketplace.herokuapp.com/", 
             description: "A two-sided marketplace to encourage the adoption of rescue animals in a safe manner.", 
             languages: ["Ruby", "Ruby on Rails"] },
-        {name: "Ruby Terminal Game", image: midnight, 
+        {name: "Ruby Terminal Game", image: "/images/midnight-snack.gif", 
             link: "https://github.com/MeikaFreckelton/MidnightSnack", 
             description: "A game to be played in your terminal where the user must assist a cat in finding a midnight snack and returning to bed.", 
             languages: ["Ruby"] },
         
-        {name: "Halloween Pong", image: pong, 
+        {name: "Halloween Pong", image: "/images/pong.gif", 
             link: "https://hackathon-halloween-pong.herokuapp.com/", 
             description: "A recreation of the classic game, Pong made during a hackathon.", 
             languages: ["JavaScript", "Express"] },
