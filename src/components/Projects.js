@@ -2,10 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom' 
 import Nav from './Nav'
 import birthday from '../images/project-images/birthday.png'
-import midnight from '../images/project-images/midnight-2.png'
-import petplace from '../images/project-images/petplace.png'
-import dotdev from '../images/project-images/dotdev.png'
-import pong from '../images/project-images/pong.png'
+
 import DesignProjects from './DesignProjects'
 
 
